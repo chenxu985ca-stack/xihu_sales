@@ -556,12 +556,75 @@ body {
     float: right;
     margin-top: -24px;
   }
+  .product-table td.actions-cell {
+    float: none;
+    margin-top: 6px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .product-table tr:hover td { background: transparent; }
   .btn-sm { padding: 8px 16px; font-size: 13px; border-radius: 6px; }
+  .btn-share, .btn-fav { padding: 8px 10px; font-size: 15px; }
 
   /* Quote panel always fullscreen on mobile */
   .quote-panel { width: 100%; }
 
   /* Modal */
   .modal { padding: 20px; max-width: 95%; }
+}
+
+/* ── Toast ── */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #2c3e50;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 500;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* ── Share & Fav Buttons (inline in table) ── */
+.btn-share, .btn-fav {
+  padding: 5px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  background: #fff;
+  transition: all 0.15s;
+  margin-left: 4px;
+  vertical-align: middle;
+  line-height: 1;
+}
+.btn-share:hover { background: #eaf2f8; border-color: var(--primary-light); }
+.btn-fav { color: #ccc; }
+.btn-fav:hover { color: #f39c12; border-color: #f39c12; }
+.btn-fav.faved { color: #f39c12; border-color: #f39c12; background: #fff9f0; }
+
+/* ── Favorites sidebar item ── */
+.sidebar .cat-item.fav-item {
+  font-weight: 500;
+}
+.sidebar .cat-item.fav-item .count {
+  background: #fff9f0;
+  color: #e67e22;
+}
+.sidebar .cat-item.fav-item.active .count {
+  background: #fdebd0;
+  color: #e67e22;
 }

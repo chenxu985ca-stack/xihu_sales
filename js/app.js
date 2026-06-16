@@ -9,6 +9,7 @@
   const DATA = window.XIHU_DATA;
   const products = DATA.products;
   let quoteItems = [];
+  let favorites = []; // {code, name}[]
   let activeCategory = null;
   let searchQuery = '';
 
@@ -88,6 +89,66 @@
     } catch (e) { quoteItems = []; }
   }
 
+  function saveFavorites() {
+    localStorage.setItem('xihu_favorites', JSON.stringify(favorites));
+  }
+
+  function loadFavorites() {
+    try {
+      const saved = localStorage.getItem('xihu_favorites');
+      if (saved) favorites = JSON.parse(saved);
+    } catch (e) { favorites = []; }
+  }
+
+  function isFavorite(code, name) {
+    return favorites.some(f => f.code === code && f.name === name);
+  }
+
+  function toggleFavorite(code, name) {
+    if (isFavorite(code, name)) {
+      favorites = favorites.filter(f => !(f.code === code && f.name === name));
+      showToast('已取消收藏');
+      // Reset view if on favorites page and it's now empty
+      if (favorites.length === 0 && activeCategory === '__favorites__') {
+        activeCategory = null;
+      }
+    } else {
+      const product = products.find(p => p.code === code && p.name === name);
+      if (product) {
+        favorites.push({ code, name });
+        showToast('⭐ 已加入常用产品');
+      }
+    }
+    saveFavorites();
+    renderSidebar();
+    renderProducts();
+  }
+
+  function shareProduct(code, name) {
+    const product = products.find(p => p.code === code && p.name === name);
+    if (!product) return;
+    const text = [
+      '【西湖生物材料】',
+      product.name,
+      '编码：' + (product.code || '—'),
+      '规格：' + (product.spec || '—'),
+      '价格：¥' + formatPrice(product.price) + ' /' + (product.unit || '—'),
+    ].join('\n');
+    navigator.clipboard.writeText(text).then(() => {
+      showToast('✅ 产品信息已复制，可直接粘贴微信发送');
+    }).catch(() => {
+      prompt('请手动复制：', text);
+    });
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => toast.classList.remove('show'), 2000);
+  }
+
   // ── Sidebar ──
 
   /** Category groups for sidebar display */
@@ -108,6 +169,13 @@
 
   function renderSidebar() {
     let html = `<div class="cat-item${!activeCategory ? ' active' : ''}" data-cat="">📋 全部产品<span class="count">${products.length}</span></div>`;
+
+    // Favorites item — always visible if there are favorites
+    if (favorites.length > 0) {
+      html += `<div class="cat-item fav-item${activeCategory === '__favorites__' ? ' active' : ''}" data-cat="__favorites__">
+        ⭐ 常用产品<span class="count">${favorites.length}</span>
+      </div>`;
+    }
 
     const groupedCats = new Set();
 
@@ -154,7 +222,10 @@
 
   function getFilteredProducts() {
     let filtered = products;
-    if (activeCategory) {
+    if (activeCategory === '__favorites__') {
+      // Filter to only favorited products (by code+name match)
+      filtered = filtered.filter(p => isFavorite(p.code, p.name));
+    } else if (activeCategory) {
       filtered = filtered.filter((p) => p.category === activeCategory);
     }
     if (searchQuery) {
@@ -186,7 +257,9 @@
       groups.get(key).push(p);
     }
 
-    dom.contentTitle.textContent = activeCategory || '全部产品';
+    let title = activeCategory || '全部产品';
+    if (activeCategory === '__favorites__') title = '⭐ 常用产品';
+    dom.contentTitle.textContent = title;
     dom.resultCount.textContent = `共 ${groupOrder.length} 个产品系列（${filtered.length} SKU）`;
 
     if (filtered.length === 0) {
@@ -218,6 +291,7 @@
 
       for (const p of variants) {
         const inQuote = quoteItems.some((q) => q.code === p.code && q.name === p.name);
+        const faved = isFavorite(p.code, p.name);
         html += `<tr class="variant-row">
           <td class="code">${escHtml(p.code || '—')}</td>
           <td class="name">${escHtml(p.name)}</td>
@@ -225,7 +299,11 @@
           <td>${escHtml(p.spec || '—')}</td>
           <td>${escHtml(p.unit || '—')}</td>
           <td class="price">${formatPrice(p.price)}</td>
-          <td><button class="btn-sm btn-add${inQuote ? ' added' : ''}" data-action="add-quote" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}">${inQuote ? '✓ 已加' : '+ 报价'}</button></td>
+          <td class="actions-cell">
+            <button class="btn-sm btn-add${inQuote ? ' added' : ''}" data-action="add-quote" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}">${inQuote ? '✓ 已加' : '+ 报价'}</button>
+            <button class="btn-share" data-action="share-product" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}" title="复制产品信息">📋</button>
+            <button class="btn-fav${faved ? ' faved' : ''}" data-action="toggle-fav" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}" title="${faved ? '取消收藏' : '加入常用'}">${faved ? '⭐' : '☆'}</button>
+          </td>
         </tr>`;
       }
     }
@@ -496,11 +574,23 @@
     selectCategory(cat || null);
   });
 
-  /** Handle clicks on the product list (add-to-quote buttons) */
+  /** Handle clicks on the product list (add-to-quote, share, fav buttons) */
   dom.productList.addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-action="add-quote"]');
-    if (!btn) return;
-    addToQuote(btn.dataset.code, btn.dataset.name);
+    const addBtn = e.target.closest('[data-action="add-quote"]');
+    if (addBtn) {
+      addToQuote(addBtn.dataset.code, addBtn.dataset.name);
+      return;
+    }
+    const shareBtn = e.target.closest('[data-action="share-product"]');
+    if (shareBtn) {
+      shareProduct(shareBtn.dataset.code, shareBtn.dataset.name);
+      return;
+    }
+    const favBtn = e.target.closest('[data-action="toggle-fav"]');
+    if (favBtn) {
+      toggleFavorite(favBtn.dataset.code, favBtn.dataset.name);
+      return;
+    }
   });
 
   /** Handle clicks on the quote panel (qty buttons, remove) */
@@ -554,6 +644,7 @@
   // ── Init ──
   function init() {
     loadQuote();
+    loadFavorites();
     renderSidebar();
     renderProducts();
     updateQuoteBadge();
