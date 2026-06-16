@@ -61,7 +61,6 @@ window.XIHU_DATA = {
     "瓷悦系列陶瓷自锁托槽",
     "瓷缘系列陶瓷自锁托槽",
     "直丝弓带环",
-    "直丝弓系列：徐氏",
     "精致直丝弓系列",
     "经营类产品",
     "网底圆丝颊面管",
@@ -703,36 +702,6 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "A400-11",
-      "name": "徐氏 五翼 直丝弓托槽",
-      "category": "直丝弓系列：徐氏",
-      "unit": "副",
-      "spec": "带状弓槽沟 28×1",
-      "price": 600.0,
-      "baseName": "徐氏 五翼 直丝弓托槽",
-      "note": ""
-    },
-    {
-      "code": "A401-11",
-      "name": "徐氏 舌侧 直丝弓托槽",
-      "category": "直丝弓系列：徐氏",
-      "unit": "副",
-      "spec": "0.022″ 20×1",
-      "price": 180.0,
-      "baseName": "徐氏 舌侧 直丝弓托槽",
-      "note": ""
-    },
-    {
-      "code": "A480-11",
-      "name": "TIP-EDGE差动直丝弓托槽",
-      "category": "直丝弓系列：徐氏",
-      "unit": "副",
-      "spec": "0.022″ 20×1",
-      "price": 168.0,
-      "baseName": "TIP-EDGE差动直丝弓托槽",
-      "note": ""
-    },
-    {
       "code": "A440-11",
       "name": "BEGG托槽（前牙）",
       "category": "其他托槽",
@@ -757,8 +726,8 @@ window.XIHU_DATA = {
       "name": "焊接型第一磨牙方丝托槽",
       "category": "其他托槽",
       "unit": "副",
-      "spec": "20×1 .022/.018",
-      "price": 50.0,
+      "spec": "每个方向20粒 80×1",
+      "price": 200.0,
       "baseName": "焊接型第一磨牙方丝托槽",
       "note": ""
     },
@@ -767,7 +736,7 @@ window.XIHU_DATA = {
       "name": "焊接型第一磨牙ROTH直丝托槽",
       "category": "其他托槽",
       "unit": "副",
-      "spec": "20×1 .022/.018",
+      "spec": "每个方向20粒 80×1",
       "price": 240.0,
       "baseName": "焊接型第一磨牙ROTH直丝托槽",
       "note": ""
@@ -778,7 +747,7 @@ window.XIHU_DATA = {
       "category": "其他托槽",
       "unit": "副",
       "spec": "每个方向20粒 80×1",
-      "price": 80.0,
+      "price": 320.0,
       "baseName": "粘接型第一磨牙方丝托槽",
       "note": ""
     },
@@ -898,7 +867,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "无钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化铝陶瓷ROTH直丝弓托槽",
       "note": ""
     },
@@ -908,7 +877,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "3带钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化铝陶瓷ROTH直丝弓托槽",
       "note": ""
     },
@@ -918,7 +887,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "345带钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化铝陶瓷ROTH直丝弓托槽",
       "note": ""
     },
@@ -928,7 +897,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "无钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化铝陶瓷MBT直丝弓托槽",
       "note": ""
     },
@@ -938,7 +907,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "3带钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化铝陶瓷MBT直丝弓托槽",
       "note": ""
     },
@@ -948,7 +917,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "345带钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化铝陶瓷MBT直丝弓托槽",
       "note": ""
     },
@@ -958,7 +927,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "无钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化锆陶瓷ROTH直丝弓托槽",
       "note": ""
     },
@@ -968,7 +937,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "3带钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化锆陶瓷ROTH直丝弓托槽",
       "note": ""
     },
@@ -978,7 +947,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "345带钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化锆陶瓷ROTH直丝弓托槽",
       "note": ""
     },
@@ -988,7 +957,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "无钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化锆陶瓷MBT直丝弓托槽",
       "note": ""
     },
@@ -998,7 +967,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "3带钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化锆陶瓷MBT直丝弓托槽",
       "note": ""
     },
@@ -1008,7 +977,7 @@ window.XIHU_DATA = {
       "category": "陶瓷直丝弓托槽",
       "unit": "副",
       "spec": "345带钩 20×1",
-      "price": "600.00(.022)/560.00(.018)",
+      "price": "160.00",
       "baseName": "氧化锆陶瓷MBT直丝弓托槽",
       "note": ""
     },
@@ -1113,16 +1082,6 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "A5111-11",
-      "name": "瓷缘系列陶瓷被动自锁托槽（标准转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
-      "unit": "副",
-      "spec": "无钩 20×1",
-      "price": 1600,
-      "baseName": "瓷缘系列陶瓷被动自锁托槽",
-      "note": "可定制色系"
-    },
-    {
       "code": "A5111-12",
       "name": "瓷缘系列陶瓷被动自锁托槽（高转矩）",
       "category": "瓷缘系列陶瓷自锁托槽",
@@ -1143,21 +1102,11 @@ window.XIHU_DATA = {
       "note": "可定制色系"
     },
     {
-      "code": "A5121-11",
+      "code": "A5111-11",
       "name": "瓷缘系列陶瓷被动自锁托槽（标准转矩）",
       "category": "瓷缘系列陶瓷自锁托槽",
       "unit": "副",
-      "spec": "3带钩 20×1",
-      "price": 1600,
-      "baseName": "瓷缘系列陶瓷被动自锁托槽",
-      "note": "可定制色系"
-    },
-    {
-      "code": "A5131-11",
-      "name": "瓷缘系列陶瓷被动自锁托槽（标准转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
-      "unit": "副",
-      "spec": "345带钩 20×1",
+      "spec": "无钩 20×1",
       "price": 1600,
       "baseName": "瓷缘系列陶瓷被动自锁托槽",
       "note": "可定制色系"
@@ -1195,6 +1144,26 @@ window.XIHU_DATA = {
     {
       "code": "A5131-13",
       "name": "瓷缘系列陶瓷被动自锁托槽（低转矩）",
+      "category": "瓷缘系列陶瓷自锁托槽",
+      "unit": "副",
+      "spec": "345带钩 20×1",
+      "price": 1600,
+      "baseName": "瓷缘系列陶瓷被动自锁托槽",
+      "note": "可定制色系"
+    },
+    {
+      "code": "A5121-11",
+      "name": "瓷缘系列陶瓷被动自锁托槽（标准转矩）",
+      "category": "瓷缘系列陶瓷自锁托槽",
+      "unit": "副",
+      "spec": "3带钩 20×1",
+      "price": 1600,
+      "baseName": "瓷缘系列陶瓷被动自锁托槽",
+      "note": "可定制色系"
+    },
+    {
+      "code": "A5131-11",
+      "name": "瓷缘系列陶瓷被动自锁托槽（标准转矩）",
       "category": "瓷缘系列陶瓷自锁托槽",
       "unit": "副",
       "spec": "345带钩 20×1",
@@ -1634,16 +1603,6 @@ window.XIHU_DATA = {
     },
     {
       "code": "A8152-31",
-      "name": "HXZ2.0自锁托槽（A款·无钩）",
-      "category": "HXZ2.0自锁托槽",
-      "unit": "副",
-      "spec": "无钩 20×1",
-      "price": 1200,
-      "baseName": "HXZ2.0自锁托槽（A款）",
-      "note": ""
-    },
-    {
-      "code": "A8152-32",
       "name": "HXZ2.0自锁托槽（A款·3带钩）",
       "category": "HXZ2.0自锁托槽",
       "unit": "副",
@@ -1653,41 +1612,11 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "A8152-33",
-      "name": "HXZ2.0自锁托槽（A款·345带钩）",
-      "category": "HXZ2.0自锁托槽",
-      "unit": "副",
-      "spec": "345带钩 20×1",
-      "price": 1200,
-      "baseName": "HXZ2.0自锁托槽（A款）",
-      "note": ""
-    },
-    {
       "code": "A8162-31",
-      "name": "HXZ2.0自锁托槽（B款·无钩）",
-      "category": "HXZ2.0自锁托槽",
-      "unit": "副",
-      "spec": "无钩 20×1",
-      "price": 1200,
-      "baseName": "HXZ2.0自锁托槽（B款）",
-      "note": ""
-    },
-    {
-      "code": "A8162-32",
       "name": "HXZ2.0自锁托槽（B款·3带钩）",
       "category": "HXZ2.0自锁托槽",
       "unit": "副",
       "spec": "3带钩 20×1",
-      "price": 1200,
-      "baseName": "HXZ2.0自锁托槽（B款）",
-      "note": ""
-    },
-    {
-      "code": "A8162-33",
-      "name": "HXZ2.0自锁托槽（B款·345带钩）",
-      "category": "HXZ2.0自锁托槽",
-      "unit": "副",
-      "spec": "345带钩 20×1",
       "price": 1200,
       "baseName": "HXZ2.0自锁托槽（B款）",
       "note": ""
@@ -5883,5 +5812,5 @@ window.XIHU_DATA = {
       "note": ""
     }
   ],
-  "totalProducts": 580
+  "totalProducts": 573
 };

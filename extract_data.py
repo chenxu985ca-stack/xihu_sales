@@ -86,17 +86,13 @@ def build_data():
     products += bracket_variants("金属网底直丝弓系列", "金属网底标准滑动直丝弓托槽", "A271-2", "A271-1", 98)
     products += bracket_variants("金属网底直丝弓系列", "金属网底迷你滑动直丝弓托槽", "A281-2", "A281-1", 98)
 
-    # 8. 徐氏系列
-    products.append(p("A400-11", "徐氏 五翼 直丝弓托槽", "直丝弓系列：徐氏", "副", "带状弓槽沟 28×1", 600.00))
-    products.append(p("A401-11", "徐氏 舌侧 直丝弓托槽", "直丝弓系列：徐氏", "副", "0.022″ 20×1", 180.00))
-    products.append(p("A480-11", "TIP-EDGE差动直丝弓托槽", "直丝弓系列：徐氏", "副", "0.022″ 20×1", 168.00))
 
     # 9. 其他托槽
     products.append(p("A440-11", "BEGG托槽（前牙）", "其他托槽", "副", "前牙 100×1", 75.00, "BEGG托槽"))
     products.append(p("A440-12", "BEGG托槽（后牙）", "其他托槽", "副", "后牙 100×1", 75.00, "BEGG托槽"))
-    products.append(p("A410-23/A410-13", "焊接型第一磨牙方丝托槽", "其他托槽", "副", "20×1 .022/.018", 50.00))
-    products.append(p("A420-23/A420-13", "焊接型第一磨牙ROTH直丝托槽", "其他托槽", "副", "20×1 .022/.018", 240.00))
-    products.append(p("A460-23/A460-13", "粘接型第一磨牙方丝托槽", "其他托槽", "副", "每个方向20粒 80×1", 80.00))
+    products.append(p("A410-23/A410-13", "焊接型第一磨牙方丝托槽", "其他托槽", "副", "每个方向20粒 80×1", 200.00))
+    products.append(p("A420-23/A420-13", "焊接型第一磨牙ROTH直丝托槽", "其他托槽", "副", "每个方向20粒 80×1", 240.00))
+    products.append(p("A460-23/A460-13", "粘接型第一磨牙方丝托槽", "其他托槽", "副", "每个方向20粒 80×1", 320.00))
     products.append(p("A470-23/A470-13", "粘接型第一磨牙ROTH直丝托槽", "其他托槽", "副", "每个方向20粒 80×1", 400.00))
     products += bracket_variants("其他托槽", "垂直槽沟ROTH直丝弓托槽", "A350-2", "A350-1", 168)
     products += bracket_variants("其他托槽", "垂直槽沟MBT直丝弓托槽", "A370-2", "A370-1", 168)
@@ -112,12 +108,12 @@ def build_data():
         for i, hook in enumerate(["无钩", "3带钩", "345带钩"]):
             code = f"{prefix_022}-1{i+1}/{prefix_018}-1{i+1}"
             products.append(p(code, f"氧化铝陶瓷{system}直丝弓托槽（{hook}）", "陶瓷直丝弓托槽",
-                      "副", f"{hook} 20×1", "600.00(.022)/560.00(.018)", f"氧化铝陶瓷{system}直丝弓托槽"))
+                      "副", f"{hook} 20×1", "160.00", f"氧化铝陶瓷{system}直丝弓托槽"))
     for system, prefix_022, prefix_018 in [("ROTH", "A711", "A731"), ("MBT", "A721", "A741")]:
         for i, hook in enumerate(["无钩", "3带钩", "345带钩"]):
             code = f"{prefix_022}-1{i+1}/{prefix_018}-1{i+1}"
             products.append(p(code, f"氧化锆陶瓷{system}直丝弓托槽（{hook}）", "陶瓷直丝弓托槽",
-                      "副", f"{hook} 20×1", "600.00(.022)/560.00(.018)", f"氧化锆陶瓷{system}直丝弓托槽"))
+                      "副", f"{hook} 20×1", "160.00", f"氧化锆陶瓷{system}直丝弓托槽"))
 
     # 12. 隐形直丝弓系列
     for variant in [("无钩", "1", "1"), ("3带钩", "2", "2")]:
@@ -132,11 +128,11 @@ def build_data():
     products += bracket_variants("精致直丝弓系列", "精致MBT直丝弓托槽", "A301-1", None, 120)
 
     # 14. 自锁托槽
-    for torque, suffix in [("标准转矩", "11"), ("高转矩", "12"), ("低转矩", "13")]:
+    for torque, suffix in [("高转矩", "12"), ("低转矩", "13"), ("标准转矩", "11")]:
         products.append(p(f"A5111-{suffix}", f"瓷缘系列陶瓷被动自锁托槽（{torque}）", "瓷缘系列陶瓷自锁托槽",
                   "副", f"无钩 20×1", 1600, "瓷缘系列陶瓷被动自锁托槽", "可定制色系"))
 
-    for torque, suffix in [("标准转矩", "11"), ("高转矩", "12"), ("低转矩", "13")]:
+    for torque, suffix in [("高转矩", "12"), ("低转矩", "13"), ("标准转矩", "11")]:
         products.append(p(f"A5121-{suffix}", f"瓷缘系列陶瓷被动自锁托槽（{torque}）", "瓷缘系列陶瓷自锁托槽",
                   "副", f"3带钩 20×1", 1600, "瓷缘系列陶瓷被动自锁托槽", "可定制色系"))
         products.append(p(f"A5131-{suffix}", f"瓷缘系列陶瓷被动自锁托槽（{torque}）", "瓷缘系列陶瓷自锁托槽",
@@ -189,7 +185,7 @@ def build_data():
 
     # 15. HXZ 2.0自锁托槽
     for style, prefix in [("A款", "A8152"), ("B款", "A8162")]:
-        for i, hook in enumerate(["无钩", "3带钩", "345带钩"]):
+        for i, hook in enumerate([ "3带钩"]):
             products.append(p(f"{prefix}-3{i+1}", f"HXZ2.0自锁托槽（{style}·{hook}）", "HXZ2.0自锁托槽",
                       "副", f"{hook} 20×1", 1200, f"HXZ2.0自锁托槽（{style}）"))
 
