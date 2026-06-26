@@ -3345,7 +3345,7 @@ window.XIHU_DATA = {
     {
       "code": "C510-11",
       "name": "c型开口器",
-      "category": "正畸附件",
+      "category": "拉钩/开口器",
       "unit": "只",
       "spec": "S/M/L/通用乳白/通用半透明 1×1",
       "price": 4.0,
@@ -3355,7 +3355,7 @@ window.XIHU_DATA = {
     {
       "code": "C510-21",
       "name": "带柄C型塑料开口器",
-      "category": "正畸附件",
+      "category": "拉钩/开口器",
       "unit": "只",
       "spec": "S/M/L 1×1",
       "price": 25.0,
@@ -3365,7 +3365,7 @@ window.XIHU_DATA = {
     {
       "code": "C510-24",
       "name": "O型开口器",
-      "category": "正畸附件",
+      "category": "拉钩/开口器",
       "unit": "只",
       "spec": "S/L 1×1",
       "price": 8.0,
@@ -3375,7 +3375,7 @@ window.XIHU_DATA = {
     {
       "code": "C510-26",
       "name": "梯形开口器",
-      "category": "正畸附件",
+      "category": "拉钩/开口器",
       "unit": "只",
       "spec": "1×1",
       "price": 8.0,
@@ -3385,7 +3385,7 @@ window.XIHU_DATA = {
     {
       "code": "C510-27",
       "name": "弓形开口器",
-      "category": "正畸附件",
+      "category": "拉钩/开口器",
       "unit": "只",
       "spec": "1×1",
       "price": 6.0,
@@ -3395,7 +3395,7 @@ window.XIHU_DATA = {
     {
       "code": "C510-28",
       "name": "方形开口器",
-      "category": "正畸附件",
+      "category": "拉钩/开口器",
       "unit": "只",
       "spec": "1×1",
       "price": 24.0,
@@ -3405,7 +3405,7 @@ window.XIHU_DATA = {
     {
       "code": "C510-29",
       "name": "钳形开口器",
-      "category": "正畸附件",
+      "category": "拉钩/开口器",
       "unit": "只",
       "spec": "S/L 2×1",
       "price": 200.0,
@@ -3415,7 +3415,7 @@ window.XIHU_DATA = {
     {
       "code": "C520-11",
       "name": "塑料开口器",
-      "category": "正畸附件",
+      "category": "拉钩/开口器",
       "unit": "只",
       "spec": "M 1×1",
       "price": 4.0,
