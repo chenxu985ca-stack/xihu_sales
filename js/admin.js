@@ -262,6 +262,7 @@
     editingCode = code;
     editingName = name;
     $('#formModalTitle').textContent = '✏️ 编辑产品';
+    $('#fCode').disabled = false;
     $('#fCode').value = p.code || '';
     $('#fName').value = p.name || '';
     $('#fCategory').value = p.category || '';
