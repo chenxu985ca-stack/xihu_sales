@@ -270,7 +270,6 @@
     $('#fSpec').value = p.spec || '';
     $('#fBaseName').value = p.baseName || '';
     $('#fNote').value = p.note || '';
-    $('#fCode').disabled = true;
     $('#formModal').classList.add('show');
     $('#fName').focus();
   }
@@ -316,17 +315,35 @@
     };
 
     if (editingCode) {
-      // Editing existing product
+      // Check duplicate if code changed
+      if (code !== editingCode || name !== editingName) {
+        const dup = products.find(p => p.code === code && p.name === name);
+        if (dup) { alert('该编码和名称的产品已存在！'); return; }
+      }
+
       if (isAddedProduct(editingCode, editingName)) {
         // Editing an added product — update in-place
         const idx = changes.added.findIndex(p => p.code === editingCode && p.name === editingName);
         if (idx >= 0) {
           changes.added[idx] = product;
         }
+      } else if (code !== editingCode) {
+        // Base product code changed — delete old, add as new
+        if (!changes.deleted.some(d => d.code === editingCode && d.name === editingName)) {
+          changes.deleted.push({ code: editingCode, name: editingName });
+        }
+        // Also clean up any existing edits for the old code
+        if (changes.edited[editingCode]) {
+          delete changes.edited[editingCode][editingName];
+          if (Object.keys(changes.edited[editingCode]).length === 0) {
+            delete changes.edited[editingCode];
+          }
+        }
+        changes.added.push(product);
       } else {
-        // Editing a base product — record in edited
-        if (!changes.edited[editingCode]) changes.edited[editingCode] = {};
-        changes.edited[editingCode][editingName] = product;
+        // Editing a base product (same code) — record in edited
+        if (!changes.edited[code]) changes.edited[code] = {};
+        changes.edited[code][name] = product;
       }
     } else {
       // Adding new
