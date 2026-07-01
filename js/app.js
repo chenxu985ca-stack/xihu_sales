@@ -7,11 +7,48 @@
 
   // ── State ──
   const DATA = window.XIHU_DATA;
-  const products = DATA.products;
+  let products = DATA.products;
   let quoteItems = [];
   let favorites = []; // {code, name}[]
   let activeCategory = null;
   let searchQuery = '';
+
+  // ── Admin Changes Merge ──
+
+  /** Merge admin localStorage changes into the products array */
+  function mergeAdminChanges() {
+    try {
+      const raw = localStorage.getItem('xihu_admin_changes');
+      if (!raw) return;
+      const changes = JSON.parse(raw);
+      const { added = [], deleted = [], edited = {} } = changes;
+
+      // 1. Remove deleted products (match by code + name)
+      if (deleted.length > 0) {
+        products = products.filter(p => {
+          return !deleted.some(d => d.code === p.code && d.name === p.name);
+        });
+      }
+
+      // 2. Apply edits
+      const editedCodes = Object.keys(edited);
+      if (editedCodes.length > 0) {
+        products = products.map(p => {
+          if (edited[p.code] && edited[p.code][p.name]) {
+            return { ...p, ...edited[p.code][p.name] };
+          }
+          return p;
+        });
+      }
+
+      // 3. Append added products
+      if (added.length > 0) {
+        products = products.concat(added);
+      }
+    } catch (e) {
+      console.warn('Failed to merge admin changes:', e);
+    }
+  }
 
   // ── DOM refs ──
   const $ = (sel) => document.querySelector(sel);
@@ -645,6 +682,7 @@
   function init() {
     loadQuote();
     loadFavorites();
+    mergeAdminChanges();
     renderSidebar();
     renderProducts();
     updateQuoteBadge();
@@ -654,7 +692,7 @@
     console.log('🏥 西湖生物材料销售助手已就绪');
     console.log('  ⌘K / Ctrl+K — 聚焦搜索');
     console.log('  ESC — 关闭报价面板');
-    console.log(`  ${DATA.products.length} 个SKU · ${DATA.categories.length} 个分类`);
+    console.log(`  ${products.length} 个SKU · ${DATA.categories.length} 个分类`);
   }
 
   init();

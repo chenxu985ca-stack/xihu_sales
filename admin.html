@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后台管理 — 西湖生物材料</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="data.js" defer></script>
+  <script src="js/admin.js" defer></script>
+</head>
+<body>
+
+<!-- Login Gate -->
+<div class="admin-login-overlay" id="loginOverlay">
+  <div class="admin-login-card">
+    <h1>🔐 后台管理</h1>
+    <p id="loginMsg">请输入管理密码</p>
+    <input type="password" id="loginPwd" placeholder="密码" autofocus>
+    <button id="loginBtn">登录</button>
+  </div>
+</div>
+
+<!-- Admin App (hidden until login) -->
+<div class="admin-app" id="adminApp" style="display:none;">
+
+  <!-- Top Bar -->
+  <header class="admin-header">
+    <div class="admin-title">
+      <a href="index.html" class="back-link">← 回前台</a>
+      <h1>⚙️ 产品管理后台</h1>
+    </div>
+    <div class="admin-actions">
+      <button class="btn btn-outline-sm" id="btnExport">📥 导出 JSON</button>
+      <button class="btn btn-outline-sm" id="btnImport">📤 导入 JSON</button>
+      <button class="btn btn-danger-sm" id="btnReset">🔄 重置变更</button>
+      <input type="file" id="importFile" accept=".json" style="display:none">
+    </div>
+  </header>
+
+  <!-- Stats Bar -->
+  <div class="admin-stats" id="statsBar">
+    <span class="stat-item">📦 总产品：<strong id="statTotal">0</strong></span>
+    <span class="stat-item stat-added">➕ 新增：<strong id="statAdded">0</strong></span>
+    <span class="stat-item stat-edited">✏️ 修改：<strong id="statEdited">0</strong></span>
+    <span class="stat-item stat-deleted">🗑 删除：<strong id="statDeleted">0</strong></span>
+  </div>
+
+  <!-- Toolbar -->
+  <div class="admin-toolbar">
+    <input type="text" id="adminSearch" placeholder="🔍 搜索编码、名称、分类…">
+    <select id="adminCategoryFilter">
+      <option value="">📂 全部分类</option>
+    </select>
+    <button class="btn btn-primary" id="btnAdd">➕ 新增产品</button>
+  </div>
+
+  <!-- Product Table -->
+  <div class="admin-table-wrap">
+    <table class="admin-table" id="adminTable">
+      <thead>
+        <tr>
+          <th style="width:90px">编码</th>
+          <th>产品名称</th>
+          <th style="width:120px">分类</th>
+          <th style="width:120px">规格</th>
+          <th style="width:50px">单位</th>
+          <th style="width:70px">价格</th>
+          <th style="width:80px">备注</th>
+          <th style="width:100px">操作</th>
+        </tr>
+      </thead>
+      <tbody id="adminTableBody"></tbody>
+    </table>
+  </div>
+
+  <!-- Pagination -->
+  <div class="admin-pagination" id="adminPagination"></div>
+
+</div>
+
+<!-- Add/Edit Modal -->
+<div class="modal-overlay" id="formModal">
+  <div class="modal admin-modal" id="formModalInner">
+    <div class="modal-header">
+      <h2 id="formModalTitle">新增产品</h2>
+      <button class="modal-close-btn" id="btnFormClose">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group flex-2">
+          <label>产品名称 <span class="req">*</span></label>
+          <input type="text" id="fName" placeholder="例：c型开口器">
+        </div>
+        <div class="form-group">
+          <label>编码 <span class="req">*</span></label>
+          <input type="text" id="fCode" placeholder="例：C510-11">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>分类 <span class="req">*</span></label>
+          <input type="text" id="fCategory" list="categoryList" placeholder="例：拉钩/开口器">
+          <datalist id="categoryList"></datalist>
+        </div>
+        <div class="form-group">
+          <label>单位 <span class="req">*</span></label>
+          <input type="text" id="fUnit" placeholder="例：只 / 袋 / 副">
+        </div>
+        <div class="form-group">
+          <label>价格 (¥) <span class="req">*</span></label>
+          <input type="text" id="fPrice" placeholder="例：4.00">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group flex-2">
+          <label>规格</label>
+          <input type="text" id="fSpec" placeholder="例：S/M/L 1×1">
+        </div>
+        <div class="form-group">
+          <label>基础名称</label>
+          <input type="text" id="fBaseName" placeholder="同系列共用名">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group flex-1">
+          <label>备注</label>
+          <input type="text" id="fNote" placeholder="例：🌟 明星产品">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" id="btnFormCancel">取消</button>
+      <button class="btn btn-primary" id="btnFormSave">保存</button>
+    </div>
+  </div>
+</div>
+
+<!-- Delete Confirm Modal -->
+<div class="modal-overlay" id="deleteModal">
+  <div class="modal admin-modal-sm" id="deleteModalInner">
+    <div class="modal-header">
+      <h2>⚠️ 确认删除</h2>
+      <button class="modal-close-btn" id="btnDeleteClose">✕</button>
+    </div>
+    <div class="modal-body">
+      <p>确定要删除以下产品吗？</p>
+      <p style="font-weight:700;margin-top:8px;" id="deleteTarget"></p>
+      <p style="color:var(--text-light);font-size:13px;margin-top:4px;">该操作仅在本地生效，可通过"重置变更"恢复。</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" id="btnDeleteCancel">取消</button>
+      <button class="btn btn-danger" id="btnDeleteConfirm">确认删除</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
