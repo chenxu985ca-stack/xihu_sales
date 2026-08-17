@@ -441,9 +441,17 @@ body {
 
 /* ── Print ── */
 @media print {
-  .header, .sidebar, .quote-overlay, .quote-panel, .btn-sm, .btn, .btn-add { display: none !important; }
-  .content { overflow: visible; padding: 0; }
-  .product-table { box-shadow: none; border: 1px solid #ddd; }
+  .header,
+  .main-layout,
+  .quote-overlay,
+  .quote-panel,
+  .modal-overlay,
+  .toast,
+  .btn-sm,
+  .btn,
+  .btn-add {
+    display: none !important;
+  }
   body { overflow: visible; height: auto; }
 }
 
