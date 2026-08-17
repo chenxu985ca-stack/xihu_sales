@@ -161,6 +161,18 @@
     renderProducts();
   }
 
+  function clearFavorites() {
+    if (favorites.length === 0) return;
+    if (confirm('确定清空所有常用产品？')) {
+      favorites = [];
+      saveFavorites();
+      if (activeCategory === '__favorites__') activeCategory = null;
+      renderSidebar();
+      renderProducts();
+      showToast('已清空常用产品');
+    }
+  }
+
   function shareProduct(code, name) {
     const product = products.find(p => p.code === code && p.name === name);
     if (!product) return;
@@ -211,6 +223,7 @@
     if (favorites.length > 0) {
       html += `<div class="cat-item fav-item${activeCategory === '__favorites__' ? ' active' : ''}" data-cat="__favorites__">
         ⭐ 常用产品<span class="count">${favorites.length}</span>
+        <button class="fav-clear" data-action="clear-favs" title="清空常用产品">✕</button>
       </div>`;
     }
 
@@ -605,6 +618,11 @@
 
   /** Handle clicks on the sidebar (category selection) */
   dom.sidebar.addEventListener('click', (e) => {
+    const clearBtn = e.target.closest('[data-action="clear-favs"]');
+    if (clearBtn) {
+      clearFavorites();
+      return;
+    }
     const item = e.target.closest('.cat-item');
     if (!item) return;
     const cat = item.dataset.cat || '';
