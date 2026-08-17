@@ -425,3 +425,64 @@
   background: var(--bg);
   color: var(--text-light);
 }
+
+/* ── Admin Mobile (≤768px) ── */
+@media (max-width: 768px) {
+  /* Header — stack title and actions */
+  .admin-header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+  .admin-title h1 { font-size: 16px; }
+  .admin-actions { flex-wrap: wrap; gap: 6px; }
+  .admin-actions .btn-outline-sm,
+  .admin-actions .btn-danger-sm {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  /* Stats — wrap */
+  .admin-stats {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  /* Toolbar — stack */
+  .admin-toolbar {
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+  .admin-toolbar input[type="text"] {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+  .admin-toolbar select { flex: 1; min-width: 0; }
+  .admin-toolbar .btn-primary { flex: 1; }
+
+  /* Table — horizontal scroll */
+  .admin-table-wrap {
+    padding: 0 8px;
+    overflow-x: auto;
+  }
+  .admin-table {
+    min-width: 640px;
+    margin: 8px 0;
+    font-size: 12px;
+  }
+
+  /* Pagination */
+  .admin-pagination { padding: 10px 8px; flex-wrap: wrap; }
+
+  /* Form modal — single column */
+  .admin-modal { max-width: 100%; }
+  .form-row { flex-direction: column; gap: 10px; }
+  .form-group.flex-2 { flex: 1; }
+  .modal-body { padding: 16px; }
+  .modal-header { padding: 14px 16px; }
+  .modal-footer { padding: 12px 16px; }
+}
