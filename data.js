@@ -23,7 +23,7 @@ window.XIHU_DATA = {
       "蓝胶",
       "绿胶"
     ],
-    "website": "www.xihubiom.com.cn",
+    "website": "http://cunxiaziyou.cn/biomaterial/index.html",
     "marketReach": "产品热销国内三十多个省市及海内外几十个国家"
   },
   "categories": [

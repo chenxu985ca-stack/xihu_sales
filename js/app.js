@@ -586,7 +586,7 @@
         ${c.starProducts.map((p) => `<li><strong>${escHtml(p)}</strong> — 广受业内好评</li>`).join('')}
       </ul>
 
-      <p style="margin-top:16px;">🌐 <a href="https://${escHtml(c.website)}" target="_blank">${escHtml(c.website)}</a></p>
+      <p style="margin-top:16px;">🌐 <a href="${escHtml(c.website)}" target="_blank">${escHtml(c.website)}</a></p>
     `;
     dom.companyModal.classList.add('show');
   }

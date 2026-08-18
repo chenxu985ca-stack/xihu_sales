@@ -861,7 +861,7 @@ def main():
         "partners": "与四川大学华西口腔医院共同研发HXZ系列自锁托槽",
         "patents": "10余项行业相关专利",
         "starProducts": ["卓越系列自锁托槽", "蓝胶", "绿胶"],
-        "website": "www.xihubiom.com.cn",
+        "website": "http://cunxiaziyou.cn/biomaterial/index.html",
         "marketReach": "产品热销国内三十多个省市及海内外几十个国家"
     }
 
