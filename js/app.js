@@ -123,6 +123,7 @@
     try {
       const saved = localStorage.getItem('xihu_quote');
       if (saved) quoteItems = JSON.parse(saved);
+      quoteItems.forEach((it) => { if (it.discount == null) it.discount = 10; });
     } catch (e) { quoteItems = []; }
   }
 
@@ -394,6 +395,7 @@
         unit: product.unit,
         spec: product.spec,
         qty: 1,
+        discount: 10,
       });
     }
     saveQuote();
@@ -437,24 +439,39 @@
     updateQuoteBadge();
   }
 
+  function setDiscount(code, name, val) {
+    const key = quoteKey(code, name);
+    const discount = parseFloat(val);
+    const item = quoteItems.find((q) => q._key === key);
+    if (!item || isNaN(discount) || discount <= 0) return;
+    item.discount = discount;
+    saveQuote();
+    renderQuote();
+    updateQuoteBadge();
+  }
+
   function renderQuote() {
     if (quoteItems.length === 0) {
       dom.quoteItems.innerHTML = `<div class="empty-state"><div class="icon">📋</div><p>报价单是空的</p><p style="font-size:12px;color:var(--text-light)">点击产品旁的 + 按钮添加</p></div>`;
     } else {
       let html = '';
       for (const item of quoteItems) {
-        const subtotal = item.price * item.qty;
+        const discount = item.discount != null ? item.discount : 10;
+        const subtotal = item.price * item.qty * discount / 10;
         const displayName = item.spec ? `${item.name} — ${item.spec}` : item.name;
         html += `<div class="quote-item">
           <div class="qi-info">
             <div class="qi-name">${escHtml(displayName)}</div>
             <div class="qi-code">${escHtml(item.code)} · ${escHtml(item.unit)}</div>
-            <div class="qi-price">¥${item.price.toFixed(2)} × ${item.qty} = ¥${subtotal.toFixed(2)}</div>
+            <div class="qi-price">¥${item.price.toFixed(2)} × ${item.qty} × ${discount}折 = ¥${subtotal.toFixed(2)}</div>
           </div>
           <div class="qi-qty">
             <button data-action="qty-dec" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}">−</button>
             <input type="number" value="${item.qty}" min="1" data-action="qty-set" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}">
             <button data-action="qty-inc" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}">+</button>
+            <label class="qi-discount">
+              <input type="number" value="${discount}" min="0.1" step="0.5" data-action="discount-set" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}"> 折
+            </label>
           </div>
           <button class="qi-remove" data-action="quote-remove" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}">🗑</button>
         </div>`;
@@ -498,7 +515,7 @@
 
   function printQuote() {
     if (quoteItems.length === 0) { alert('报价单是空的'); return; }
-    const total = quoteItems.reduce((sum, i) => sum + i.price * i.qty, 0);
+    const total = quoteItems.reduce((sum, i) => sum + i.price * i.qty * (i.discount != null ? i.discount : 10) / 10, 0);
     const now = new Date().toLocaleDateString('zh-CN');
     let html = `
       <div style="max-width:700px;margin:0 auto;font-family:sans-serif;">
@@ -515,9 +532,11 @@
             <th style="padding:8px;text-align:left;border-bottom:1px solid #ddd;">规格</th>
             <th style="padding:8px;text-align:center;border-bottom:1px solid #ddd;">数量</th>
             <th style="padding:8px;text-align:right;border-bottom:1px solid #ddd;">单价(¥)</th>
+            <th style="padding:8px;text-align:center;border-bottom:1px solid #ddd;">折扣</th>
             <th style="padding:8px;text-align:right;border-bottom:1px solid #ddd;">小计(¥)</th>
           </tr></thead><tbody>`;
     quoteItems.forEach((item, i) => {
+      const d = item.discount != null ? item.discount : 10;
       html += `<tr>
         <td style="padding:8px;border-bottom:1px solid #eee;">${i + 1}</td>
         <td style="padding:8px;border-bottom:1px solid #eee;font-family:monospace;">${escHtml(item.code)}</td>
@@ -525,7 +544,8 @@
         <td style="padding:8px;border-bottom:1px solid #eee;">${escHtml(item.spec || item.unit)}</td>
         <td style="padding:8px;text-align:center;border-bottom:1px solid #eee;">${item.qty}</td>
         <td style="padding:8px;text-align:right;border-bottom:1px solid #eee;">${item.price.toFixed(2)}</td>
-        <td style="padding:8px;text-align:right;border-bottom:1px solid #eee;font-weight:bold;">${(item.price * item.qty).toFixed(2)}</td>
+        <td style="padding:8px;text-align:center;border-bottom:1px solid #eee;">${d}折</td>
+        <td style="padding:8px;text-align:right;border-bottom:1px solid #eee;font-weight:bold;">${(item.price * item.qty * d / 10).toFixed(2)}</td>
       </tr>`;
     });
     html += `</tbody></table>
@@ -543,12 +563,13 @@
 
   function copyQuote() {
     if (quoteItems.length === 0) { alert('报价单是空的'); return; }
-    const total = quoteItems.reduce((sum, i) => sum + i.price * i.qty, 0);
+    const total = quoteItems.reduce((sum, i) => sum + i.price * i.qty * (i.discount != null ? i.discount : 10) / 10, 0);
     let text = '杭州西湖生物材料有限公司 — 报价单\n';
     text += '='.repeat(50) + '\n';
-    text += '编码\t产品名称\t规格\t数量\t单价\t小计\n';
+    text += '编码\t产品名称\t规格\t数量\t单价\t折扣\t小计\n';
     quoteItems.forEach((item) => {
-      text += `${item.code}\t${item.name}\t${item.spec || item.unit}\t${item.qty}\t${item.price.toFixed(2)}\t${(item.price * item.qty).toFixed(2)}\n`;
+      const d = item.discount != null ? item.discount : 10;
+      text += `${item.code}\t${item.name}\t${item.spec || item.unit}\t${item.qty}\t${item.price.toFixed(2)}\t${d}折\t${(item.price * item.qty * d / 10).toFixed(2)}\n`;
     });
     text += '='.repeat(50) + '\n';
     text += `合计：¥${total.toFixed(2)}\n`;
@@ -662,9 +683,13 @@
 
   /** Handle input changes on qty fields */
   dom.quoteItems.addEventListener('change', (e) => {
-    const input = e.target.closest('[data-action="qty-set"]');
+    const input = e.target.closest('[data-action="qty-set"], [data-action="discount-set"]');
     if (!input) return;
-    setQty(input.dataset.code, input.dataset.name, input.value);
+    if (input.dataset.action === 'discount-set') {
+      setDiscount(input.dataset.code, input.dataset.name, input.value);
+    } else {
+      setQty(input.dataset.code, input.dataset.name, input.value);
+    }
   });
 
   /** Handle clicks on the company modal */

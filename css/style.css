@@ -331,6 +331,23 @@ body {
   padding: 3px;
   font-size: 13px;
 }
+.quote-item .qi-discount {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 11px;
+  color: var(--text-light);
+  margin-left: 4px;
+  white-space: nowrap;
+}
+.quote-item .qi-discount input {
+  width: 38px;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px;
+  font-size: 13px;
+}
 .quote-item .qi-remove {
   background: none;
   border: none;
