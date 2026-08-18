@@ -27,15 +27,15 @@ def bracket_variants(category, base_name, code_prefix_022, code_prefix_018, pric
     """Generate 3 bracket variants (无钩/3带钩/345带钩) for .022 and .018 systems."""
     if price_018 is None:
         price_018 = price_022
-    hooks = [("无钩", "11"), ("3带钩", "12"), ("345带钩", "13")]
+    hooks = [("无钩", "1"), ("3带钩", "2"), ("345带钩", "3")]
     result = []
     for hook_name, hook_suffix in hooks:
         name = f"{base_name}（{hook_name}）"
         codes = []
         if code_prefix_022:
-            codes.append(f"{code_prefix_022}-{hook_suffix}")
+            codes.append(f"{code_prefix_022}{hook_suffix}")
         if code_prefix_018:
-            codes.append(f"{code_prefix_018}-{hook_suffix}")
+            codes.append(f"{code_prefix_018}{hook_suffix}")
         code = "/".join(codes)
         result.append(p(code, name, category, "副", f"{hook_name} 20×1",
                        f"{price_022:.2f}(.022)/{price_018:.2f}(.018)" if price_022 != price_018 else price_022,

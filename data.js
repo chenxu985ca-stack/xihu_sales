@@ -763,7 +763,7 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "A350-2-11/A350-1-11",
+      "code": "A350-21/A350-11",
       "name": "垂直槽沟ROTH直丝弓托槽（无钩）",
       "category": "其他托槽",
       "unit": "副",
@@ -1023,7 +1023,7 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "A261-1-11",
+      "code": "A261-11",
       "name": "精致ROTH直丝弓托槽（无钩）",
       "category": "精致直丝弓系列",
       "unit": "副",
@@ -1033,7 +1033,7 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "A261-1-12",
+      "code": "A261-12",
       "name": "精致ROTH直丝弓托槽（3带钩）",
       "category": "精致直丝弓系列",
       "unit": "副",
@@ -1043,7 +1043,7 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "A261-1-13",
+      "code": "A261-13",
       "name": "精致ROTH直丝弓托槽（345带钩）",
       "category": "精致直丝弓系列",
       "unit": "副",
