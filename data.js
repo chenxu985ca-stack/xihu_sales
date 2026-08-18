@@ -4247,7 +4247,47 @@ window.XIHU_DATA = {
       "name": "圆弓丝",
       "category": "正畸丝",
       "unit": "袋",
-      "spec": "0.012″-0.020″ 10×1",
+      "spec": "0.012″ 10×1",
+      "price": 40.0,
+      "baseName": "圆弓丝",
+      "note": ""
+    },
+    {
+      "code": "F710",
+      "name": "圆弓丝",
+      "category": "正畸丝",
+      "unit": "袋",
+      "spec": "0.014″ 10×1",
+      "price": 40.0,
+      "baseName": "圆弓丝",
+      "note": ""
+    },
+    {
+      "code": "F710",
+      "name": "圆弓丝",
+      "category": "正畸丝",
+      "unit": "袋",
+      "spec": "0.016″ 10×1",
+      "price": 40.0,
+      "baseName": "圆弓丝",
+      "note": ""
+    },
+    {
+      "code": "F710",
+      "name": "圆弓丝",
+      "category": "正畸丝",
+      "unit": "袋",
+      "spec": "0.018″ 10×1",
+      "price": 40.0,
+      "baseName": "圆弓丝",
+      "note": ""
+    },
+    {
+      "code": "F710",
+      "name": "圆弓丝",
+      "category": "正畸丝",
+      "unit": "袋",
+      "spec": "0.020″ 10×1",
       "price": 40.0,
       "baseName": "圆弓丝",
       "note": ""
@@ -4263,31 +4303,41 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "F720-17",
-      "name": "方弓丝 0.017″×0.017″",
+      "code": "F720-16",
+      "name": "方弓丝 0.016″×0.022″",
       "category": "正畸丝",
       "unit": "袋",
-      "spec": "0.017″×0.017″ 10×1",
+      "spec": "0.016″×0.022″ 10×1",
+      "price": 50.0,
+      "baseName": "方弓丝",
+      "note": ""
+    },
+    {
+      "code": "F720-17",
+      "name": "方弓丝 0.017″×0.022″",
+      "category": "正畸丝",
+      "unit": "袋",
+      "spec": "0.017″×0.022″ 10×1",
       "price": 50.0,
       "baseName": "方弓丝",
       "note": ""
     },
     {
       "code": "F720-18",
-      "name": "方弓丝 0.018″×0.018″",
+      "name": "方弓丝 0.018″×0.022″",
       "category": "正畸丝",
       "unit": "袋",
-      "spec": "0.018″×0.018″ 10×1",
+      "spec": "0.018″×0.022″ 10×1",
       "price": 50.0,
       "baseName": "方弓丝",
       "note": ""
     },
     {
       "code": "F720-19",
-      "name": "方弓丝 0.019″×0.019″",
+      "name": "方弓丝 0.019″×0.022″",
       "category": "正畸丝",
       "unit": "袋",
-      "spec": "0.019″×0.019″ 10×1",
+      "spec": "0.019″×0.022″ 10×1",
       "price": 50.0,
       "baseName": "方弓丝",
       "note": ""
@@ -4297,7 +4347,7 @@ window.XIHU_DATA = {
       "name": "不锈钢盘丝 0.012″",
       "category": "正畸丝",
       "unit": "袋",
-      "spec": "0.012″ 5m",
+      "spec": "0.30mm″ 5m",
       "price": 20.0,
       "baseName": "不锈钢盘丝",
       "note": ""
@@ -4307,7 +4357,7 @@ window.XIHU_DATA = {
       "name": "不锈钢盘丝 0.014″",
       "category": "正畸丝",
       "unit": "袋",
-      "spec": "0.014″ 5m",
+      "spec": "0.35mm″ 5m",
       "price": 20.0,
       "baseName": "不锈钢盘丝",
       "note": ""
@@ -4317,7 +4367,7 @@ window.XIHU_DATA = {
       "name": "不锈钢盘丝 0.016″",
       "category": "正畸丝",
       "unit": "袋",
-      "spec": "0.016″ 5m",
+      "spec": "0.40mm″ 5m",
       "price": 20.0,
       "baseName": "不锈钢盘丝",
       "note": ""
@@ -4327,7 +4377,7 @@ window.XIHU_DATA = {
       "name": "不锈钢盘丝 0.018″",
       "category": "正畸丝",
       "unit": "袋",
-      "spec": "0.018″ 5m",
+      "spec": "0.45mm″ 5m",
       "price": 20.0,
       "baseName": "不锈钢盘丝",
       "note": ""
@@ -4337,7 +4387,7 @@ window.XIHU_DATA = {
       "name": "不锈钢盘丝 0.020″",
       "category": "正畸丝",
       "unit": "袋",
-      "spec": "0.020″ 5m",
+      "spec": "0.50mm″ 5m",
       "price": 20.0,
       "baseName": "不锈钢盘丝",
       "note": ""
@@ -4347,7 +4397,47 @@ window.XIHU_DATA = {
       "name": "圆直丝",
       "category": "正畸丝",
       "unit": "筒",
-      "spec": "0.012″-0.020″ 10×1",
+      "spec": "0.012″ 10×1",
+      "price": 50.0,
+      "baseName": "圆直丝",
+      "note": ""
+    },
+    {
+      "code": "F610",
+      "name": "圆直丝",
+      "category": "正畸丝",
+      "unit": "筒",
+      "spec": "0.014″ 10×1",
+      "price": 50.0,
+      "baseName": "圆直丝",
+      "note": ""
+    },
+    {
+      "code": "F610",
+      "name": "圆直丝",
+      "category": "正畸丝",
+      "unit": "筒",
+      "spec": "0.016″ 10×1",
+      "price": 50.0,
+      "baseName": "圆直丝",
+      "note": ""
+    },
+    {
+      "code": "F610",
+      "name": "圆直丝",
+      "category": "正畸丝",
+      "unit": "筒",
+      "spec": "0.018″ 10×1",
+      "price": 50.0,
+      "baseName": "圆直丝",
+      "note": ""
+    },
+    {
+      "code": "F610",
+      "name": "圆直丝",
+      "category": "正畸丝",
+      "unit": "筒",
+      "spec": "0.020″ 10×1",
       "price": 50.0,
       "baseName": "圆直丝",
       "note": ""
@@ -4363,31 +4453,41 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "F620-17",
-      "name": "方直丝 0.017″×0.017″",
+      "code": "F620-16",
+      "name": "方直丝 0.016″×0.022″",
       "category": "正畸丝",
       "unit": "筒",
-      "spec": "0.017″×0.017″ 10×1",
+      "spec": "0.016″×0.022″ 10×1",
+      "price": 72.0,
+      "baseName": "方直丝",
+      "note": ""
+    },
+    {
+      "code": "F620-17",
+      "name": "方直丝 0.017″×0.022″",
+      "category": "正畸丝",
+      "unit": "筒",
+      "spec": "0.017″×0.022″ 10×1",
       "price": 72.0,
       "baseName": "方直丝",
       "note": ""
     },
     {
       "code": "F620-18",
-      "name": "方直丝 0.018″×0.018″",
+      "name": "方直丝 0.018″×0.022″",
       "category": "正畸丝",
       "unit": "筒",
-      "spec": "0.018″×0.018″ 10×1",
+      "spec": "0.018″×0.022″ 10×1",
       "price": 72.0,
       "baseName": "方直丝",
       "note": ""
     },
     {
       "code": "F620-19",
-      "name": "方直丝 0.019″×0.019″",
+      "name": "方直丝 0.019″×0.022″",
       "category": "正畸丝",
       "unit": "筒",
-      "spec": "0.019″×0.019″ 10×1",
+      "spec": "0.019″×0.022″ 10×1",
       "price": 72.0,
       "baseName": "方直丝",
       "note": ""
@@ -4397,7 +4497,47 @@ window.XIHU_DATA = {
       "name": "圆直丝（进口丝）",
       "category": "正畸丝",
       "unit": "筒",
-      "spec": "0.012″-0.020″ 10×1",
+      "spec": "0.012″ 10×1",
+      "price": 100.0,
+      "baseName": "圆直丝（进口丝）",
+      "note": ""
+    },
+    {
+      "code": "F610I",
+      "name": "圆直丝（进口丝）",
+      "category": "正畸丝",
+      "unit": "筒",
+      "spec": "0.014″ 10×1",
+      "price": 100.0,
+      "baseName": "圆直丝（进口丝）",
+      "note": ""
+    },
+    {
+      "code": "F610I",
+      "name": "圆直丝（进口丝）",
+      "category": "正畸丝",
+      "unit": "筒",
+      "spec": "0.016″ 10×1",
+      "price": 100.0,
+      "baseName": "圆直丝（进口丝）",
+      "note": ""
+    },
+    {
+      "code": "F610I",
+      "name": "圆直丝（进口丝）",
+      "category": "正畸丝",
+      "unit": "筒",
+      "spec": "0.018″ 10×1",
+      "price": 100.0,
+      "baseName": "圆直丝（进口丝）",
+      "note": ""
+    },
+    {
+      "code": "F610I",
+      "name": "圆直丝（进口丝）",
+      "category": "正畸丝",
+      "unit": "筒",
+      "spec": "0.020″ 10×1",
       "price": 100.0,
       "baseName": "圆直丝（进口丝）",
       "note": ""
@@ -6143,5 +6283,5 @@ window.XIHU_DATA = {
       "note": ""
     }
   ],
-  "totalProducts": 606
+  "totalProducts": 620
 };
