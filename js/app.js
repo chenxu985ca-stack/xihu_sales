@@ -521,27 +521,37 @@
           <p style="color:#666;margin:4px 0;">Hangzhou Xihu Biomaterials Co., Ltd.</p>
           <p style="color:#999;font-size:12px;">报价单 · ${now}</p>
         </div>
-        <table style="width:100%;border-collapse:collapse;">
+        <table style="width:100%;border-collapse:collapse;table-layout:fixed;font-size:13px;">
+          <colgroup>
+            <col style="width:28px">
+            <col style="width:118px">
+            <col>
+            <col style="width:70px">
+            <col style="width:44px">
+            <col style="width:68px">
+            <col style="width:46px">
+            <col style="width:80px">
+          </colgroup>
           <thead><tr style="background:#f0f4f8;">
-            <th style="padding:8px;text-align:left;border-bottom:1px solid #ddd;">#</th>
-            <th style="padding:8px;text-align:left;border-bottom:1px solid #ddd;">编码</th>
-            <th style="padding:8px;text-align:left;border-bottom:1px solid #ddd;">产品名称</th>
-            <th style="padding:8px;text-align:left;border-bottom:1px solid #ddd;">规格</th>
-            <th style="padding:8px;text-align:center;border-bottom:1px solid #ddd;">数量</th>
-            <th style="padding:8px;text-align:right;border-bottom:1px solid #ddd;">单价(¥)</th>
-            <th style="padding:8px;text-align:center;border-bottom:1px solid #ddd;">折扣</th>
-            <th style="padding:8px;text-align:right;border-bottom:1px solid #ddd;">小计(¥)</th>
+            <th style="padding:6px;text-align:left;border-bottom:1px solid #ddd;">#</th>
+            <th style="padding:6px;text-align:left;border-bottom:1px solid #ddd;">编码</th>
+            <th style="padding:6px;text-align:left;border-bottom:1px solid #ddd;">产品名称</th>
+            <th style="padding:6px;text-align:left;border-bottom:1px solid #ddd;">规格</th>
+            <th style="padding:6px;text-align:center;border-bottom:1px solid #ddd;">数量</th>
+            <th style="padding:6px;text-align:right;border-bottom:1px solid #ddd;">单价(¥)</th>
+            <th style="padding:6px;text-align:center;border-bottom:1px solid #ddd;">折扣</th>
+            <th style="padding:6px;text-align:right;border-bottom:1px solid #ddd;">小计(¥)</th>
           </tr></thead><tbody>`;
     quoteItems.forEach((item, i) => {
       html += `<tr>
-        <td style="padding:8px;border-bottom:1px solid #eee;">${i + 1}</td>
-        <td style="padding:8px;border-bottom:1px solid #eee;font-family:monospace;">${escHtml(item.code)}</td>
-        <td style="padding:8px;border-bottom:1px solid #eee;">${escHtml(item.name)}</td>
-        <td style="padding:8px;border-bottom:1px solid #eee;">${escHtml(item.spec || item.unit)}</td>
-        <td style="padding:8px;text-align:center;border-bottom:1px solid #eee;">${item.qty}</td>
-        <td style="padding:8px;text-align:right;border-bottom:1px solid #eee;">${item.price.toFixed(2)}</td>
-        <td style="padding:8px;text-align:center;border-bottom:1px solid #eee;">${quoteDiscount}折</td>
-        <td style="padding:8px;text-align:right;border-bottom:1px solid #eee;font-weight:bold;">${(item.price * item.qty * quoteDiscount / 10).toFixed(2)}</td>
+        <td style="padding:6px;border-bottom:1px solid #eee;">${i + 1}</td>
+        <td style="padding:6px;border-bottom:1px solid #eee;font-family:monospace;white-space:nowrap;">${escHtml(item.code)}</td>
+        <td style="padding:6px;border-bottom:1px solid #eee;">${escHtml(item.name)}</td>
+        <td style="padding:6px;border-bottom:1px solid #eee;color:#666;">${escHtml(item.spec || item.unit)}</td>
+        <td style="padding:6px;text-align:center;border-bottom:1px solid #eee;">${item.qty}</td>
+        <td style="padding:6px;text-align:right;border-bottom:1px solid #eee;">${item.price.toFixed(2)}</td>
+        <td style="padding:6px;text-align:center;border-bottom:1px solid #eee;">${quoteDiscount}折</td>
+        <td style="padding:6px;text-align:right;border-bottom:1px solid #eee;font-weight:bold;">${(item.price * item.qty * quoteDiscount / 10).toFixed(2)}</td>
       </tr>`;
     });
     html += `</tbody></table>
