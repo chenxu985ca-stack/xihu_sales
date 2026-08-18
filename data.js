@@ -5489,7 +5489,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 720,
-      "baseName": "隐形正畸钳 垂直钳",
+      "baseName": "隐形正畸钳",
       "note": ""
     },
     {
@@ -5499,7 +5499,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 720,
-      "baseName": "隐形正畸钳 打孔钳",
+      "baseName": "隐形正畸钳",
       "note": ""
     },
     {
@@ -5509,7 +5509,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 720,
-      "baseName": "隐形正畸钳 泪滴钳",
+      "baseName": "隐形正畸钳",
       "note": ""
     },
     {
@@ -5519,7 +5519,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 720,
-      "baseName": "隐形正畸钳 水平钳",
+      "baseName": "隐形正畸钳",
       "note": ""
     },
     {
