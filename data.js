@@ -4249,7 +4249,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "0.012″ 10×1",
       "price": 40.0,
-      "baseName": "圆弓丝0.012″",
+      "baseName": "圆弓丝",
       "note": ""
     },
     {
@@ -4259,7 +4259,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "0.014″ 10×1",
       "price": 40.0,
-      "baseName": "圆弓丝0.014″",
+      "baseName": "圆弓丝",
       "note": ""
     },
     {
@@ -4269,7 +4269,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "0.016″ 10×1",
       "price": 40.0,
-      "baseName": "圆弓丝0.016″",
+      "baseName": "圆弓丝",
       "note": ""
     },
     {
@@ -4279,7 +4279,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "0.018″ 10×1",
       "price": 40.0,
-      "baseName": "圆弓丝0.018″",
+      "baseName": "圆弓丝",
       "note": ""
     },
     {
@@ -4289,7 +4289,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "0.020″ 10×1",
       "price": 40.0,
-      "baseName": "圆弓丝0.020″",
+      "baseName": "圆弓丝",
       "note": ""
     },
     {
