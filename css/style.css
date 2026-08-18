@@ -236,6 +236,10 @@ body {
 }
 .btn-add:hover { background: #219a52; }
 .btn-add.added { background: var(--text-light); }
+.product-table .actions-cell {
+  white-space: nowrap;
+  min-width: 150px;
+}
 
 /* Empty state */
 .empty-state {
