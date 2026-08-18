@@ -722,7 +722,7 @@ def build_data():
         ("V形钳", "J610-25", 580),
     ]
     for name, code, price in pliers_import:
-        products.append(p(code, f"{name}（进口合金）", "正畸钳(进口合金)", "把", "1×1", price, name))
+        products.append(p(code, f"{name}（进口合金）", "正畸钳(进口合金)", "把", "1×1", price, "非凡正畸钳"))
 
     # 正畸钳 — 普通合金
     pliers_normal = [
@@ -741,7 +741,7 @@ def build_data():
         ("V形钳", "J110-25", 470),
     ]
     for name, code, price in pliers_normal:
-        products.append(p(code, f"{name}（普通合金）", "正畸钳(普通合金)", "把", "1×1", price, name))
+        products.append(p(code, f"{name}（普通合金）", "正畸钳(普通合金)", "把", "1×1", price, "天工正畸钳"))
 
     # 隐形正畸钳
     for name, code, price in [("垂直钳", "J710-03", 720), ("打孔钳", "J710-02", 720), ("泪滴钳", "J710-01", 720), ("水平钳", "J710-04", 720)]:

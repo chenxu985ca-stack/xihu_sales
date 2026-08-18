@@ -4989,7 +4989,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 600,
-      "baseName": "末端切断钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -4999,7 +4999,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 600,
-      "baseName": "细丝切断钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5009,7 +5009,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 600,
-      "baseName": "粗丝切断钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5019,7 +5019,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 600,
-      "baseName": "细丝成形钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5029,7 +5029,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 600,
-      "baseName": "细丝成形刻断钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5039,7 +5039,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 600,
-      "baseName": "小日月钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5049,7 +5049,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "转矩成形钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5059,7 +5059,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "带环去除钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5069,7 +5069,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "梯形钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5079,7 +5079,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "托槽去除钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5089,7 +5089,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "霍氏钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5099,7 +5099,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "后牙托槽去除钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5109,7 +5109,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "KIM钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5119,7 +5119,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "垂直曲弯制钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5129,7 +5129,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "粘接剂去除钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5139,7 +5139,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "分牙圈放置钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5149,7 +5149,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "游离钩夹紧钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5159,7 +5159,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "末端回弯钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5169,7 +5169,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 600,
-      "baseName": "多功能钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5179,7 +5179,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "三喙钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5189,7 +5189,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "梯形半月钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5199,7 +5199,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 640,
-      "baseName": "颊面管去盖钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5209,7 +5209,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 600,
-      "baseName": "末端切平钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5219,7 +5219,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "镍钛回弯钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5229,7 +5229,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 580,
-      "baseName": "V形钳",
+      "baseName": "非凡正畸钳",
       "note": ""
     },
     {
@@ -5239,7 +5239,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 490,
-      "baseName": "末端切断钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5249,7 +5249,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 490,
-      "baseName": "细丝切断钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5259,7 +5259,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 490,
-      "baseName": "粗丝切断钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5269,7 +5269,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 490,
-      "baseName": "细丝成形钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5279,7 +5279,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 490,
-      "baseName": "细丝成形刻断钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5289,7 +5289,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 490,
-      "baseName": "小日月钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5299,7 +5299,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 490,
-      "baseName": "转矩成形钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5309,7 +5309,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "带环去除钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5319,7 +5319,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "梯形钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5329,7 +5329,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "托槽去除钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5339,7 +5339,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "霍氏钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5349,7 +5349,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "后牙托槽去除钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5359,7 +5359,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "KIM钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5369,7 +5369,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "垂直曲弯制钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5379,7 +5379,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "粘接剂去除钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5389,7 +5389,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "分牙圈放置钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5399,7 +5399,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "游离钩夹紧钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5409,7 +5409,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "末端回弯钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5419,7 +5419,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "多功能钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5429,7 +5429,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "三喙钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5439,7 +5439,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 490,
-      "baseName": "梯形半月钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5449,7 +5449,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 520,
-      "baseName": "颊面管去盖钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5459,7 +5459,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "末端切平钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5469,7 +5469,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "镍钛回弯钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
@@ -5479,7 +5479,7 @@ window.XIHU_DATA = {
       "unit": "把",
       "spec": "1×1",
       "price": 470,
-      "baseName": "V形钳",
+      "baseName": "天工正畸钳",
       "note": ""
     },
     {
