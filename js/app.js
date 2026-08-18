@@ -444,7 +444,7 @@
       let html = '';
       for (const item of quoteItems) {
         const subtotal = item.price * item.qty;
-        const displayName = item.spec ? `${item.baseName} — ${item.spec}` : item.name;
+        const displayName = item.spec ? `${item.name} — ${item.spec}` : item.name;
         html += `<div class="quote-item">
           <div class="qi-info">
             <div class="qi-name">${escHtml(displayName)}</div>
@@ -521,7 +521,7 @@
       html += `<tr>
         <td style="padding:8px;border-bottom:1px solid #eee;">${i + 1}</td>
         <td style="padding:8px;border-bottom:1px solid #eee;font-family:monospace;">${escHtml(item.code)}</td>
-        <td style="padding:8px;border-bottom:1px solid #eee;">${escHtml(item.baseName)}</td>
+        <td style="padding:8px;border-bottom:1px solid #eee;">${escHtml(item.name)}</td>
         <td style="padding:8px;border-bottom:1px solid #eee;">${escHtml(item.spec || item.unit)}</td>
         <td style="padding:8px;text-align:center;border-bottom:1px solid #eee;">${item.qty}</td>
         <td style="padding:8px;text-align:right;border-bottom:1px solid #eee;">${item.price.toFixed(2)}</td>
@@ -548,7 +548,7 @@
     text += '='.repeat(50) + '\n';
     text += '编码\t产品名称\t规格\t数量\t单价\t小计\n';
     quoteItems.forEach((item) => {
-      text += `${item.code}\t${item.baseName}\t${item.spec || item.unit}\t${item.qty}\t${item.price.toFixed(2)}\t${(item.price * item.qty).toFixed(2)}\n`;
+      text += `${item.code}\t${item.name}\t${item.spec || item.unit}\t${item.qty}\t${item.price.toFixed(2)}\t${(item.price * item.qty).toFixed(2)}\n`;
     });
     text += '='.repeat(50) + '\n';
     text += `合计：¥${total.toFixed(2)}\n`;
