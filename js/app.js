@@ -114,6 +114,11 @@
   /** Generate a unique key for quote items (spec distinguishes same code+name in different sizes) */
   function quoteKey(code, name, spec) { return `${code}|||${name}|||${spec || ''}`; }
 
+  /** Find a product by its unique identity (code + name + spec) */
+  function findProduct(code, name, spec) {
+    return products.find(p => p.code === code && p.name === name && p.spec === spec);
+  }
+
   // ── Persistence ──
 
   function saveQuote() {
@@ -162,7 +167,7 @@
         activeCategory = null;
       }
     } else {
-      const product = products.find(p => p.code === code && p.name === name && p.spec === spec);
+      const product = findProduct(code, name, spec);
       if (product) {
         favorites.push({ code, name, spec });
         showToast('⭐ 已加入常用产品');
@@ -186,7 +191,7 @@
   }
 
   function shareProduct(code, name, spec) {
-    const product = products.find(p => p.code === code && p.name === name && p.spec === spec);
+    const product = findProduct(code, name, spec);
     if (!product) return;
     const text = [
       '【西湖生物材料】',
@@ -389,7 +394,7 @@
   }
 
   function addToQuote(code, name, spec) {
-    const product = products.find((p) => p.code === code && p.name === name && p.spec === spec);
+    const product = findProduct(code, name, spec);
     if (!product) return;
 
     const key = quoteKey(code, name, spec);

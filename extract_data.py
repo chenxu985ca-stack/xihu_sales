@@ -44,7 +44,7 @@ def bracket_variants(category, base_name, code_prefix_022, code_prefix_018, pric
     return result
 
 
-def size_split(code, name, category, unit, price, dims, packaging, prefix="", base_name=None, note=""):
+def size_split(code, name, category, unit, price, dims, packaging, prefix="", base_name=None):
     """把多尺寸/多属性规格拆成单条产品。
     dims: 各维度取值，如 [["S","M","L"]] 或 [["S","M","L"],["通用乳白","通用半透明"]]。
     prefix: 固定在规格最前面的文字（如 "颌向全口"）。
@@ -54,8 +54,8 @@ def size_split(code, name, category, unit, price, dims, packaging, prefix="", ba
     result = []
     for combo in itertools.product(*dims):
         dim_str = "/".join(combo)
-        spec = f"{prefix} {dim_str} {packaging}".strip()
-        result.append(p(code, name, category, unit, spec, price, base_name or name, note))
+        head = f"{prefix} {dim_str}" if prefix else dim_str
+        result.append(p(code, name, category, unit, f"{head} {packaging}", price, base_name or name))
     return result
 
 
