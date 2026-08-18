@@ -96,6 +96,12 @@ body {
   white-space: nowrap;
 }
 .header .badge:hover { transform: scale(1.05); }
+.header .badge #quoteCount {
+  display: inline-block;
+  min-width: 1.5em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
 .header .badge.alt { background: var(--warning); }
 .header .admin-link {
   background: rgba(255,255,255,0.12);
