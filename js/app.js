@@ -538,8 +538,8 @@
           <colgroup>
             <col style="width:28px">
             <col style="width:118px">
-            <col>
-            <col style="width:70px">
+            <col style="width:180px">
+            <col style="width:110px">
             <col style="width:44px">
             <col style="width:68px">
             <col style="width:46px">
