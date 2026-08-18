@@ -533,7 +533,7 @@
           合计：¥${total.toFixed(2)}
         </div>
         <div style="margin-top:40px;font-size:12px;color:#999;border-top:1px solid #eee;padding-top:12px;">
-          <p>杭州西湖生物材料有限公司 | 杭州钱江经济开发区 | www.xihubiom.com.cn</p>
+          <p>杭州西湖生物材料有限公司 | 杭州钱江经济开发区 | http://cunxiaziyou.cn/biomaterial/index.html</p>
           <p>ISO 9001 · ISO 13485 · CE · FDA · GMP 认证</p>
         </div>
       </div>`;
@@ -553,7 +553,7 @@
     text += '='.repeat(50) + '\n';
     text += `合计：¥${total.toFixed(2)}\n`;
     text += `日期：${new Date().toLocaleDateString('zh-CN')}\n`;
-    text += '杭州西湖生物材料有限公司 | www.xihubiom.com.cn';
+    text += '杭州西湖生物材料有限公司 | http://cunxiaziyou.cn/biomaterial/index.html';
 
     navigator.clipboard.writeText(text).then(() => {
       alert('报价单已复制到剪贴板！');
