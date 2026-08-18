@@ -3343,36 +3343,6 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "C510-11",
-      "name": "c型开口器",
-      "category": "拉钩/开口器",
-      "unit": "只",
-      "spec": "S/M/L/通用乳白/通用半透明 1×1",
-      "price": 4.0,
-      "baseName": "开口器",
-      "note": ""
-    },
-    {
-      "code": "C510-21",
-      "name": "带柄C型塑料开口器",
-      "category": "拉钩/开口器",
-      "unit": "只",
-      "spec": "S/M/L 1×1",
-      "price": 25.0,
-      "baseName": "开口器",
-      "note": ""
-    },
-    {
-      "code": "C510-24",
-      "name": "O型开口器",
-      "category": "拉钩/开口器",
-      "unit": "只",
-      "spec": "S/L 1×1",
-      "price": 8.0,
-      "baseName": "开口器",
-      "note": ""
-    },
-    {
       "code": "C510-26",
       "name": "梯形开口器",
       "category": "拉钩/开口器",
@@ -3403,16 +3373,6 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "C510-29",
-      "name": "钳形开口器",
-      "category": "拉钩/开口器",
-      "unit": "只",
-      "spec": "S/L 2×1",
-      "price": 200.0,
-      "baseName": "开口器",
-      "note": ""
-    },
-    {
       "code": "C520-11",
       "name": "塑料开口器",
       "category": "拉钩/开口器",
@@ -3420,26 +3380,6 @@ window.XIHU_DATA = {
       "spec": "M 1×1",
       "price": 4.0,
       "baseName": "开口器",
-      "note": ""
-    },
-    {
-      "code": "C700-27",
-      "name": "门型辅弓",
-      "category": "正畸附件",
-      "unit": "袋",
-      "spec": "L/M/S 5×1",
-      "price": 80.0,
-      "baseName": "门型辅弓",
-      "note": ""
-    },
-    {
-      "code": "C711-27",
-      "name": "五曲前牙转矩簧 上牙",
-      "category": "正畸附件",
-      "unit": "袋",
-      "spec": "上牙 L/M/S 5×1",
-      "price": 40.0,
-      "baseName": "五曲前牙转矩簧",
       "note": ""
     },
     {
@@ -3500,6 +3440,196 @@ window.XIHU_DATA = {
       "spec": "顺/逆 5×1",
       "price": 20.0,
       "baseName": "扭轴簧",
+      "note": ""
+    },
+    {
+      "code": "C510-11",
+      "name": "c型开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "S/通用乳白 1×1",
+      "price": 4.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-11",
+      "name": "c型开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "S/通用半透明 1×1",
+      "price": 4.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-11",
+      "name": "c型开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "M/通用乳白 1×1",
+      "price": 4.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-11",
+      "name": "c型开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "M/通用半透明 1×1",
+      "price": 4.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-11",
+      "name": "c型开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "L/通用乳白 1×1",
+      "price": 4.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-11",
+      "name": "c型开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "L/通用半透明 1×1",
+      "price": 4.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-21",
+      "name": "带柄C型塑料开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "S 1×1",
+      "price": 25.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-21",
+      "name": "带柄C型塑料开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "M 1×1",
+      "price": 25.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-21",
+      "name": "带柄C型塑料开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "L 1×1",
+      "price": 25.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-24",
+      "name": "O型开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "S 1×1",
+      "price": 8.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-24",
+      "name": "O型开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "L 1×1",
+      "price": 8.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-29",
+      "name": "钳形开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "S 2×1",
+      "price": 200.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C510-29",
+      "name": "钳形开口器",
+      "category": "拉钩/开口器",
+      "unit": "只",
+      "spec": "L 2×1",
+      "price": 200.0,
+      "baseName": "开口器",
+      "note": ""
+    },
+    {
+      "code": "C700-27",
+      "name": "门型辅弓",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "S 5×1",
+      "price": 80.0,
+      "baseName": "门型辅弓",
+      "note": ""
+    },
+    {
+      "code": "C700-27",
+      "name": "门型辅弓",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "M 5×1",
+      "price": 80.0,
+      "baseName": "门型辅弓",
+      "note": ""
+    },
+    {
+      "code": "C700-27",
+      "name": "门型辅弓",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "L 5×1",
+      "price": 80.0,
+      "baseName": "门型辅弓",
+      "note": ""
+    },
+    {
+      "code": "C711-27",
+      "name": "五曲前牙转矩簧 上牙",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "上牙 S 5×1",
+      "price": 40.0,
+      "baseName": "五曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C711-27",
+      "name": "五曲前牙转矩簧 上牙",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "上牙 M 5×1",
+      "price": 40.0,
+      "baseName": "五曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C711-27",
+      "name": "五曲前牙转矩簧 上牙",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "上牙 L 5×1",
+      "price": 40.0,
+      "baseName": "五曲前牙转矩簧",
       "note": ""
     },
     {
@@ -3573,16 +3703,6 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "C550-11",
-      "name": "标准型拉钩",
-      "category": "拉钩/开口器",
-      "unit": "袋",
-      "spec": "S/L 2×1",
-      "price": 60.0,
-      "baseName": "标准型拉钩",
-      "note": ""
-    },
-    {
       "code": "C550-21",
       "name": "侧方拉钩",
       "category": "拉钩/开口器",
@@ -3603,11 +3723,41 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
+      "code": "C550-11",
+      "name": "标准型拉钩",
+      "category": "拉钩/开口器",
+      "unit": "袋",
+      "spec": "S 2×1",
+      "price": 60.0,
+      "baseName": "标准型拉钩",
+      "note": ""
+    },
+    {
+      "code": "C550-11",
+      "name": "标准型拉钩",
+      "category": "拉钩/开口器",
+      "unit": "袋",
+      "spec": "L 2×1",
+      "price": 60.0,
+      "baseName": "标准型拉钩",
+      "note": ""
+    },
+    {
       "code": "C550-43",
       "name": "压唇型拉钩",
       "category": "拉钩/开口器",
       "unit": "袋",
-      "spec": "S/L 2×1",
+      "spec": "S 2×1",
+      "price": 100.0,
+      "baseName": "压唇型拉钩",
+      "note": ""
+    },
+    {
+      "code": "C550-43",
+      "name": "压唇型拉钩",
+      "category": "拉钩/开口器",
+      "unit": "袋",
+      "spec": "L 2×1",
       "price": 100.0,
       "baseName": "压唇型拉钩",
       "note": ""
@@ -3617,7 +3767,37 @@ window.XIHU_DATA = {
       "name": "标准型拉钩（半口）",
       "category": "拉钩/开口器",
       "unit": "袋",
-      "spec": "左/右/S/L 2×1",
+      "spec": "左/S 2×1",
+      "price": 60.0,
+      "baseName": "标准型拉钩（半口）",
+      "note": ""
+    },
+    {
+      "code": "C550-47",
+      "name": "标准型拉钩（半口）",
+      "category": "拉钩/开口器",
+      "unit": "袋",
+      "spec": "左/L 2×1",
+      "price": 60.0,
+      "baseName": "标准型拉钩（半口）",
+      "note": ""
+    },
+    {
+      "code": "C550-47",
+      "name": "标准型拉钩（半口）",
+      "category": "拉钩/开口器",
+      "unit": "袋",
+      "spec": "右/S 2×1",
+      "price": 60.0,
+      "baseName": "标准型拉钩（半口）",
+      "note": ""
+    },
+    {
+      "code": "C550-47",
+      "name": "标准型拉钩（半口）",
+      "category": "拉钩/开口器",
+      "unit": "袋",
+      "spec": "右/L 2×1",
       "price": 60.0,
       "baseName": "标准型拉钩（半口）",
       "note": ""
@@ -5163,16 +5343,6 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "H530-12",
-      "name": "J钩牵引头帽 S/M/L",
-      "category": "正畸口外件",
-      "unit": "只",
-      "spec": "S/M/L 1×1",
-      "price": 36.0,
-      "baseName": "J钩牵引头帽",
-      "note": ""
-    },
-    {
       "code": "H530-18",
       "name": "双J钩（Tweed技术适用）",
       "category": "正畸口外件",
@@ -5303,6 +5473,36 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
+      "code": "H530-12",
+      "name": "J钩牵引头帽",
+      "category": "正畸口外件",
+      "unit": "只",
+      "spec": "S 1×1",
+      "price": 36.0,
+      "baseName": "J钩牵引头帽",
+      "note": ""
+    },
+    {
+      "code": "H530-12",
+      "name": "J钩牵引头帽",
+      "category": "正畸口外件",
+      "unit": "只",
+      "spec": "M 1×1",
+      "price": 36.0,
+      "baseName": "J钩牵引头帽",
+      "note": ""
+    },
+    {
+      "code": "H530-12",
+      "name": "J钩牵引头帽",
+      "category": "正畸口外件",
+      "unit": "只",
+      "spec": "L 1×1",
+      "price": 36.0,
+      "baseName": "J钩牵引头帽",
+      "note": ""
+    },
+    {
       "code": "I410-11",
       "name": "普通口内反光镜（套装）",
       "category": "正畸工具",
@@ -5318,16 +5518,6 @@ window.XIHU_DATA = {
       "category": "正畸工具",
       "unit": "只",
       "spec": "A/B/C/D型 1×1",
-      "price": 300.0,
-      "baseName": "玻璃口内反光镜",
-      "note": ""
-    },
-    {
-      "code": "I410-35",
-      "name": "玻璃口内反光镜（镀膜双面颌向全口）",
-      "category": "正畸工具",
-      "unit": "只",
-      "spec": "颌向全口 S/M/L 1×1",
       "price": 300.0,
       "baseName": "玻璃口内反光镜",
       "note": ""
@@ -5363,16 +5553,6 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "I410-41",
-      "name": "不锈钢口内反光镜（颌向全口 小/中/大号）",
-      "category": "正畸工具",
-      "unit": "只",
-      "spec": "颌向全口 S/L 1×1",
-      "price": 200.0,
-      "baseName": "不锈钢口内反光镜",
-      "note": ""
-    },
-    {
       "code": "I410-48",
       "name": "不锈钢口内反光镜（颌面）",
       "category": "正畸工具",
@@ -5400,26 +5580,6 @@ window.XIHU_DATA = {
       "spec": "局部A型/B型 1×1",
       "price": 130.0,
       "baseName": "不锈钢口内反光镜",
-      "note": ""
-    },
-    {
-      "code": "I410-71",
-      "name": "不锈钢口内反光镜（颌向）",
-      "category": "正畸工具",
-      "unit": "只",
-      "spec": "颌向 S/M/L 1×1",
-      "price": 130.0,
-      "baseName": "不锈钢口内反光镜",
-      "note": ""
-    },
-    {
-      "code": "I411-11",
-      "name": "组合式口内反光镜",
-      "category": "正畸工具",
-      "unit": "只",
-      "spec": "组合式 S/L 1×1",
-      "price": 240.0,
-      "baseName": "组合式口内反光镜",
       "note": ""
     },
     {
@@ -5520,6 +5680,106 @@ window.XIHU_DATA = {
       "spec": "杆式4/套 4×1",
       "price": 380.0,
       "baseName": "托槽定位器",
+      "note": ""
+    },
+    {
+      "code": "I410-35",
+      "name": "玻璃口内反光镜（镀膜双面颌向全口）",
+      "category": "正畸工具",
+      "unit": "只",
+      "spec": "颌向全口 S 1×1",
+      "price": 300.0,
+      "baseName": "玻璃口内反光镜",
+      "note": ""
+    },
+    {
+      "code": "I410-35",
+      "name": "玻璃口内反光镜（镀膜双面颌向全口）",
+      "category": "正畸工具",
+      "unit": "只",
+      "spec": "颌向全口 M 1×1",
+      "price": 300.0,
+      "baseName": "玻璃口内反光镜",
+      "note": ""
+    },
+    {
+      "code": "I410-35",
+      "name": "玻璃口内反光镜（镀膜双面颌向全口）",
+      "category": "正畸工具",
+      "unit": "只",
+      "spec": "颌向全口 L 1×1",
+      "price": 300.0,
+      "baseName": "玻璃口内反光镜",
+      "note": ""
+    },
+    {
+      "code": "I410-41",
+      "name": "不锈钢口内反光镜（颌向全口）",
+      "category": "正畸工具",
+      "unit": "只",
+      "spec": "颌向全口 S 1×1",
+      "price": 200.0,
+      "baseName": "不锈钢口内反光镜",
+      "note": ""
+    },
+    {
+      "code": "I410-41",
+      "name": "不锈钢口内反光镜（颌向全口）",
+      "category": "正畸工具",
+      "unit": "只",
+      "spec": "颌向全口 L 1×1",
+      "price": 200.0,
+      "baseName": "不锈钢口内反光镜",
+      "note": ""
+    },
+    {
+      "code": "I410-71",
+      "name": "不锈钢口内反光镜（颌向）",
+      "category": "正畸工具",
+      "unit": "只",
+      "spec": "颌向 S 1×1",
+      "price": 130.0,
+      "baseName": "不锈钢口内反光镜",
+      "note": ""
+    },
+    {
+      "code": "I410-71",
+      "name": "不锈钢口内反光镜（颌向）",
+      "category": "正畸工具",
+      "unit": "只",
+      "spec": "颌向 M 1×1",
+      "price": 130.0,
+      "baseName": "不锈钢口内反光镜",
+      "note": ""
+    },
+    {
+      "code": "I410-71",
+      "name": "不锈钢口内反光镜（颌向）",
+      "category": "正畸工具",
+      "unit": "只",
+      "spec": "颌向 L 1×1",
+      "price": 130.0,
+      "baseName": "不锈钢口内反光镜",
+      "note": ""
+    },
+    {
+      "code": "I411-11",
+      "name": "组合式口内反光镜",
+      "category": "正畸工具",
+      "unit": "只",
+      "spec": "组合式 S 1×1",
+      "price": 240.0,
+      "baseName": "组合式口内反光镜",
+      "note": ""
+    },
+    {
+      "code": "I411-11",
+      "name": "组合式口内反光镜",
+      "category": "正畸工具",
+      "unit": "只",
+      "spec": "组合式 L 1×1",
+      "price": 240.0,
+      "baseName": "组合式口内反光镜",
       "note": ""
     },
     {
@@ -5793,5 +6053,5 @@ window.XIHU_DATA = {
       "note": ""
     }
   ],
-  "totalProducts": 571
+  "totalProducts": 597
 };

@@ -111,8 +111,8 @@
     return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
   }
 
-  /** Generate a unique key for quote items */
-  function quoteKey(code, name) { return `${code}|||${name}`; }
+  /** Generate a unique key for quote items (spec distinguishes same code+name in different sizes) */
+  function quoteKey(code, name, spec) { return `${code}|||${name}|||${spec || ''}`; }
 
   // ── Persistence ──
 
@@ -125,6 +125,8 @@
     try {
       const saved = localStorage.getItem('xihu_quote');
       if (saved) quoteItems = JSON.parse(saved);
+      // migrate: recompute _key so same code+name with different spec stay distinct
+      quoteItems = quoteItems.map((it) => ({ ...it, _key: quoteKey(it.code, it.name, it.spec) }));
       const d = localStorage.getItem('xihu_quote_discount');
       if (d != null) quoteDiscount = parseFloat(d) || 10;
     } catch (e) { quoteItems = []; }
@@ -138,25 +140,31 @@
     try {
       const saved = localStorage.getItem('xihu_favorites');
       if (saved) favorites = JSON.parse(saved);
+      // migrate: backfill spec for favorites saved before spec became part of the key
+      favorites = favorites.map(f => {
+        if (f.spec) return f;
+        const match = products.find(p => p.code === f.code && p.name === f.name);
+        return match ? { code: f.code, name: f.name, spec: match.spec } : f;
+      });
     } catch (e) { favorites = []; }
   }
 
-  function isFavorite(code, name) {
-    return favorites.some(f => f.code === code && f.name === name);
+  function isFavorite(code, name, spec) {
+    return favorites.some(f => f.code === code && f.name === name && (f.spec || '') === (spec || ''));
   }
 
-  function toggleFavorite(code, name) {
-    if (isFavorite(code, name)) {
-      favorites = favorites.filter(f => !(f.code === code && f.name === name));
+  function toggleFavorite(code, name, spec) {
+    if (isFavorite(code, name, spec)) {
+      favorites = favorites.filter(f => !(f.code === code && f.name === name && (f.spec || '') === (spec || '')));
       showToast('已取消收藏');
       // Reset view if on favorites page and it's now empty
       if (favorites.length === 0 && activeCategory === '__favorites__') {
         activeCategory = null;
       }
     } else {
-      const product = products.find(p => p.code === code && p.name === name);
+      const product = products.find(p => p.code === code && p.name === name && p.spec === spec);
       if (product) {
-        favorites.push({ code, name });
+        favorites.push({ code, name, spec });
         showToast('⭐ 已加入常用产品');
       }
     }
@@ -177,8 +185,8 @@
     }
   }
 
-  function shareProduct(code, name) {
-    const product = products.find(p => p.code === code && p.name === name);
+  function shareProduct(code, name, spec) {
+    const product = products.find(p => p.code === code && p.name === name && p.spec === spec);
     if (!product) return;
     const text = [
       '【西湖生物材料】',
@@ -278,7 +286,7 @@
     let filtered = products;
     if (activeCategory === '__favorites__') {
       // Filter to only favorited products (by code+name match)
-      filtered = filtered.filter(p => isFavorite(p.code, p.name));
+      filtered = filtered.filter(p => isFavorite(p.code, p.name, p.spec));
     } else if (activeCategory) {
       filtered = filtered.filter((p) => p.category === activeCategory);
     }
@@ -344,8 +352,8 @@
       </tr>`;
 
       for (const p of variants) {
-        const inQuote = quoteItems.some((q) => q.code === p.code && q.name === p.name);
-        const faved = isFavorite(p.code, p.name);
+        const inQuote = quoteItems.some((q) => q.code === p.code && q.name === p.name && (q.spec || '') === (p.spec || ''));
+        const faved = isFavorite(p.code, p.name, p.spec);
         html += `<tr class="variant-row">
           <td class="code">${escHtml(p.code || '—')}</td>
           <td class="name">${escHtml(p.name)}</td>
@@ -354,9 +362,9 @@
           <td>${escHtml(p.unit || '—')}</td>
           <td class="price">${formatPrice(p.price)}</td>
           <td class="actions-cell">
-            <button class="btn-sm btn-add${inQuote ? ' added' : ''}" data-action="add-quote" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}">${inQuote ? '✓ 已加' : '+ 报价'}</button>
-            <button class="btn-share" data-action="share-product" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}" title="复制产品信息">📋</button>
-            <button class="btn-fav${faved ? ' faved' : ''}" data-action="toggle-fav" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}" title="${faved ? '取消收藏' : '加入常用'}">${faved ? '⭐' : '☆'}</button>
+            <button class="btn-sm btn-add${inQuote ? ' added' : ''}" data-action="add-quote" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}" data-spec="${escJs(p.spec)}">${inQuote ? '✓ 已加' : '+ 报价'}</button>
+            <button class="btn-share" data-action="share-product" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}" data-spec="${escJs(p.spec)}" title="复制产品信息">📋</button>
+            <button class="btn-fav${faved ? ' faved' : ''}" data-action="toggle-fav" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}" data-spec="${escJs(p.spec)}" title="${faved ? '取消收藏' : '加入常用'}">${faved ? '⭐' : '☆'}</button>
           </td>
         </tr>`;
       }
@@ -380,11 +388,11 @@
     dom.quoteCount.textContent = quoteItems.length;
   }
 
-  function addToQuote(code, name) {
-    const product = products.find((p) => p.code === code && p.name === name);
+  function addToQuote(code, name, spec) {
+    const product = products.find((p) => p.code === code && p.name === name && p.spec === spec);
     if (!product) return;
 
-    const key = quoteKey(code, name);
+    const key = quoteKey(code, name, spec);
     const existing = quoteItems.find((q) => q._key === key);
     if (existing) {
       existing.qty += 1;
@@ -406,8 +414,8 @@
     updateQuoteBadge();
   }
 
-  function removeFromQuote(code, name) {
-    const key = quoteKey(code, name);
+  function removeFromQuote(code, name, spec) {
+    const key = quoteKey(code, name, spec);
     quoteItems = quoteItems.filter((q) => q._key !== key);
     saveQuote();
     renderQuote();
@@ -415,13 +423,13 @@
     updateQuoteBadge();
   }
 
-  function updateQty(code, name, delta) {
-    const key = quoteKey(code, name);
+  function updateQty(code, name, spec, delta) {
+    const key = quoteKey(code, name, spec);
     const item = quoteItems.find((q) => q._key === key);
     if (!item) return;
     item.qty = Math.max(0, item.qty + delta);
     if (item.qty === 0) {
-      removeFromQuote(code, name);
+      removeFromQuote(code, name, spec);
       return;
     }
     saveQuote();
@@ -429,12 +437,12 @@
     updateQuoteBadge();
   }
 
-  function setQty(code, name, val) {
-    const key = quoteKey(code, name);
+  function setQty(code, name, spec, val) {
+    const key = quoteKey(code, name, spec);
     const qty = parseInt(val) || 0;
     const item = quoteItems.find((q) => q._key === key);
     if (!item) return;
-    if (qty <= 0) { removeFromQuote(code, name); return; }
+    if (qty <= 0) { removeFromQuote(code, name, spec); return; }
     item.qty = qty;
     saveQuote();
     renderQuote();
@@ -464,11 +472,11 @@
             <div class="qi-price">¥${item.price.toFixed(2)} × ${item.qty} = ¥${subtotal.toFixed(2)}</div>
           </div>
           <div class="qi-qty">
-            <button data-action="qty-dec" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}">−</button>
-            <input type="number" value="${item.qty}" min="1" data-action="qty-set" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}">
-            <button data-action="qty-inc" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}">+</button>
+            <button data-action="qty-dec" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}" data-spec="${escJs(item.spec)}">−</button>
+            <input type="number" value="${item.qty}" min="1" data-action="qty-set" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}" data-spec="${escJs(item.spec)}">
+            <button data-action="qty-inc" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}" data-spec="${escJs(item.spec)}">+</button>
           </div>
-          <button class="qi-remove" data-action="quote-remove" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}">🗑</button>
+          <button class="qi-remove" data-action="quote-remove" data-code="${escJs(item.code)}" data-name="${escJs(item.name)}" data-spec="${escJs(item.spec)}">🗑</button>
         </div>`;
       }
       dom.quoteItems.innerHTML = html;
@@ -659,17 +667,17 @@
   dom.productList.addEventListener('click', (e) => {
     const addBtn = e.target.closest('[data-action="add-quote"]');
     if (addBtn) {
-      addToQuote(addBtn.dataset.code, addBtn.dataset.name);
+      addToQuote(addBtn.dataset.code, addBtn.dataset.name, addBtn.dataset.spec);
       return;
     }
     const shareBtn = e.target.closest('[data-action="share-product"]');
     if (shareBtn) {
-      shareProduct(shareBtn.dataset.code, shareBtn.dataset.name);
+      shareProduct(shareBtn.dataset.code, shareBtn.dataset.name, shareBtn.dataset.spec);
       return;
     }
     const favBtn = e.target.closest('[data-action="toggle-fav"]');
     if (favBtn) {
-      toggleFavorite(favBtn.dataset.code, favBtn.dataset.name);
+      toggleFavorite(favBtn.dataset.code, favBtn.dataset.name, favBtn.dataset.spec);
       return;
     }
   });
@@ -678,11 +686,11 @@
   dom.quoteItems.addEventListener('click', (e) => {
     const btn = e.target.closest('[data-action]');
     if (!btn) return;
-    const { action, code, name } = btn.dataset;
+    const { action, code, name, spec } = btn.dataset;
     switch (action) {
-      case 'qty-inc': updateQty(code, name, 1); break;
-      case 'qty-dec': updateQty(code, name, -1); break;
-      case 'quote-remove': removeFromQuote(code, name); break;
+      case 'qty-inc': updateQty(code, name, spec, 1); break;
+      case 'qty-dec': updateQty(code, name, spec, -1); break;
+      case 'quote-remove': removeFromQuote(code, name, spec); break;
     }
   });
 
@@ -690,7 +698,7 @@
   dom.quoteItems.addEventListener('change', (e) => {
     const input = e.target.closest('[data-action="qty-set"]');
     if (!input) return;
-    setQty(input.dataset.code, input.dataset.name, input.value);
+    setQty(input.dataset.code, input.dataset.name, input.dataset.spec, input.value);
   });
 
   /** Handle clicks on the company modal */
