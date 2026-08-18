@@ -155,6 +155,11 @@ body {
   padding: 1px 8px;
 }
 .sidebar .cat-item.active .count { background: #d4e6f1; color: var(--primary); }
+.sidebar .cat-item.company-item {
+  border-top: 1px solid var(--border);
+  margin-top: 12px;
+  font-weight: 500;
+}
 .sidebar .sidebar-title {
   font-size: 11px;
   text-transform: uppercase;

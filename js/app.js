@@ -273,6 +273,9 @@
       }
     }
 
+    // 公司信息入口（移动端顶栏隐藏了该按钮，改放在侧边栏底部）
+    html += `<div class="cat-item company-item" data-action="show-company">🏥 公司信息</div>`;
+
     dom.sidebar.innerHTML = html;
   }
 
@@ -685,6 +688,12 @@
     const clearBtn = e.target.closest('[data-action="clear-favs"]');
     if (clearBtn) {
       clearFavorites();
+      return;
+    }
+    const companyBtn = e.target.closest('[data-action="show-company"]');
+    if (companyBtn) {
+      closeSidebar();
+      showCompany();
       return;
     }
     const item = e.target.closest('.cat-item');
