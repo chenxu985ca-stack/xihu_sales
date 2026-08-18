@@ -331,22 +331,26 @@ body {
   padding: 3px;
   font-size: 13px;
 }
-.quote-item .qi-discount {
+.quote-discount {
   display: flex;
   align-items: center;
-  gap: 2px;
-  font-size: 11px;
+  gap: 4px;
+  font-size: 13px;
   color: var(--text-light);
-  margin-left: 4px;
-  white-space: nowrap;
+  font-weight: 400;
 }
-.quote-item .qi-discount input {
-  width: 38px;
+.quote-discount input {
+  width: 48px;
   text-align: center;
   border: 1px solid var(--border);
   border-radius: 4px;
-  padding: 3px;
-  font-size: 13px;
+  padding: 4px;
+  font-size: 14px;
+}
+.quote-total-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .quote-item .qi-remove {
   background: none;
