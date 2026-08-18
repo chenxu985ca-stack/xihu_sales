@@ -5484,7 +5484,7 @@ window.XIHU_DATA = {
     },
     {
       "code": "J710-03",
-      "name": "隐形正畸钳 垂直钳",
+      "name": "垂直钳",
       "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
@@ -5494,7 +5494,7 @@ window.XIHU_DATA = {
     },
     {
       "code": "J710-02",
-      "name": "隐形正畸钳 打孔钳",
+      "name": "打孔钳",
       "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
@@ -5504,7 +5504,7 @@ window.XIHU_DATA = {
     },
     {
       "code": "J710-01",
-      "name": "隐形正畸钳 泪滴钳",
+      "name": "泪滴钳",
       "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
@@ -5514,7 +5514,7 @@ window.XIHU_DATA = {
     },
     {
       "code": "J710-04",
-      "name": "隐形正畸钳 水平钳",
+      "name": "水平钳",
       "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
