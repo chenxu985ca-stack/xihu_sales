@@ -3393,36 +3393,6 @@ window.XIHU_DATA = {
       "note": ""
     },
     {
-      "code": "C720",
-      "name": "单曲前牙转矩簧（小）",
-      "category": "正畸附件",
-      "unit": "袋",
-      "spec": "0.016″×0.022″ 5×1",
-      "price": 30.0,
-      "baseName": "单曲前牙转矩簧",
-      "note": ""
-    },
-    {
-      "code": "C721",
-      "name": "单曲前牙转矩簧（中）",
-      "category": "正畸附件",
-      "unit": "袋",
-      "spec": "0.017″×0.025″ 5×1",
-      "price": 30.0,
-      "baseName": "单曲前牙转矩簧",
-      "note": ""
-    },
-    {
-      "code": "C722",
-      "name": "单曲前牙转矩簧（大）",
-      "category": "正畸附件",
-      "unit": "袋",
-      "spec": "0.019″×0.025″ 5×1",
-      "price": 30.0,
-      "baseName": "单曲前牙转矩簧",
-      "note": ""
-    },
-    {
       "code": "C730-11",
       "name": "正轴簧",
       "category": "正畸附件",
@@ -3630,6 +3600,126 @@ window.XIHU_DATA = {
       "spec": "上牙 L 5×1",
       "price": 40.0,
       "baseName": "五曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C720",
+      "name": "单曲前牙转矩簧（小）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.016″×0.022″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C720",
+      "name": "单曲前牙转矩簧（小）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.017″×0.025″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C720",
+      "name": "单曲前牙转矩簧（小）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.018″×0.025″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C720",
+      "name": "单曲前牙转矩簧（小）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.019″×0.025″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C721",
+      "name": "单曲前牙转矩簧（中）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.016″×0.022″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C721",
+      "name": "单曲前牙转矩簧（中）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.017″×0.025″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C721",
+      "name": "单曲前牙转矩簧（中）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.018″×0.025″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C721",
+      "name": "单曲前牙转矩簧（中）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.019″×0.025″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C722",
+      "name": "单曲前牙转矩簧（大）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.016″×0.022″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C722",
+      "name": "单曲前牙转矩簧（大）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.017″×0.025″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C722",
+      "name": "单曲前牙转矩簧（大）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.018″×0.025″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
+      "note": ""
+    },
+    {
+      "code": "C722",
+      "name": "单曲前牙转矩簧（大）",
+      "category": "正畸附件",
+      "unit": "袋",
+      "spec": "0.019″×0.025″ 5×1",
+      "price": 30.0,
+      "baseName": "单曲前牙转矩簧",
       "note": ""
     },
     {
@@ -6053,5 +6143,5 @@ window.XIHU_DATA = {
       "note": ""
     }
   ],
-  "totalProducts": 597
+  "totalProducts": 606
 };
