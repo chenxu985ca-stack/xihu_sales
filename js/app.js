@@ -528,12 +528,6 @@
 
   function printQuote() {
     if (quoteItems.length === 0) { alert('报价单是空的'); return; }
-    // iOS/Android「添加到主屏幕」的 standalone 模式不支持 window.print()，改用系统分享/复制
-    if (isStandalone()) {
-      if (navigator.share) shareQuote();
-      else copyQuote();
-      return;
-    }
     const total = quoteItems.reduce((sum, i) => sum + i.price * i.qty * quoteDiscount / 10, 0);
     const now = new Date().toLocaleDateString('zh-CN');
     let html = `
@@ -612,21 +606,6 @@
     }).catch(() => {
       alert('复制失败，请手动复制');
     });
-  }
-
-  /** 系统分享（主屏幕 app 里替代打印） */
-  function shareQuote() {
-    if (quoteItems.length === 0) { alert('报价单是空的'); return; }
-    navigator.share({
-      title: '杭州西湖生物材料有限公司 报价单',
-      text: quoteText(),
-    }).catch(() => { /* 用户取消分享，忽略 */ });
-  }
-
-  /** 是否运行在「添加到主屏幕」的 standalone 模式（该模式不支持 window.print()） */
-  function isStandalone() {
-    return window.navigator.standalone === true
-        || window.matchMedia('(display-mode: standalone)').matches;
   }
 
   // ── Company Info ──

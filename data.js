@@ -2357,6 +2357,26 @@ window.XIHU_DATA = {
       "name": "医用带环空盒（16#-32#）",
       "category": "带环附件",
       "unit": "套",
+      "spec": "1×1",
+      "price": 320.0,
+      "baseName": "医用带环空盒",
+      "note": ""
+    },
+    {
+      "code": "B180-21",
+      "name": "医用带环空盒（31#-44#）",
+      "category": "带环附件",
+      "unit": "套",
+      "spec": "1×1",
+      "price": 320.0,
+      "baseName": "医用带环空盒",
+      "note": ""
+    },
+    {
+      "code": "B180-11",
+      "name": "医用带环空盒（16#-32#）",
+      "category": "带环附件",
+      "unit": "套",
       "spec": "2×1",
       "price": 320.0,
       "baseName": "医用带环空盒（16#-32#）",
@@ -3729,7 +3749,7 @@ window.XIHU_DATA = {
       "unit": "个",
       "spec": "1×1",
       "price": 36.0,
-      "baseName": "普通Ⅰ型扩弓器",
+      "baseName": "扩弓器",
       "note": ""
     },
     {
@@ -3739,7 +3759,7 @@ window.XIHU_DATA = {
       "unit": "个",
       "spec": "1×1",
       "price": 46.0,
-      "baseName": "支架Ⅰ型扩弓器",
+      "baseName": "扩弓器",
       "note": ""
     },
     {
@@ -3749,7 +3769,7 @@ window.XIHU_DATA = {
       "unit": "个",
       "spec": "1×1",
       "price": 46.0,
-      "baseName": "普通Ⅱ型扩弓器",
+      "baseName": "扩弓器",
       "note": ""
     },
     {
@@ -3759,7 +3779,7 @@ window.XIHU_DATA = {
       "unit": "个",
       "spec": "1×1",
       "price": 66.0,
-      "baseName": "支架Ⅱ型扩弓器",
+      "baseName": "扩弓器",
       "note": ""
     },
     {
@@ -3769,7 +3789,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "1×1",
       "price": 100.0,
-      "baseName": "支架Ⅱ型A扩弓器（AR防回旋）",
+      "baseName": "扩弓器",
       "note": ""
     },
     {
@@ -3779,7 +3799,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "1×1",
       "price": 100.0,
-      "baseName": "支架Ⅱ型A扩弓器（PLUS）",
+      "baseName": "扩弓器",
       "note": ""
     },
     {
@@ -3789,7 +3809,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "1×1",
       "price": 100.0,
-      "baseName": "支架Ⅳ型扩弓器（下颌）",
+      "baseName": "扩弓器",
       "note": ""
     },
     {
@@ -5888,26 +5908,6 @@ window.XIHU_DATA = {
       "category": "正畸工具",
       "unit": "只",
       "spec": "舌侧/颊侧 1×1",
-      "price": 300.0,
-      "baseName": "玻璃口内反光镜",
-      "note": ""
-    },
-    {
-      "code": "I",
-      "name": "玻璃口内反光镜（镀膜双面通用型）",
-      "category": "正畸工具",
-      "unit": "只",
-      "spec": "通用 1×1",
-      "price": 300.0,
-      "baseName": "玻璃口内反光镜",
-      "note": ""
-    },
-    {
-      "code": "I",
-      "name": "玻璃口内反光镜（镀膜双面组合式）",
-      "category": "正畸工具",
-      "unit": "只",
-      "spec": "组合 1×1",
       "price": 300.0,
       "baseName": "玻璃口内反光镜",
       "note": ""
