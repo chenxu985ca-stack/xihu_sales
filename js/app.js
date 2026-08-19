@@ -814,6 +814,19 @@
 
     dom.searchInput.addEventListener('input', debounce(onSearch, 200));
 
+    // 使用引导条：点击关闭并记住（不再重复出现）
+    const usageGuide = document.getElementById('usageGuide');
+    const usageClose = document.getElementById('usageClose');
+    if (usageGuide && usageClose) {
+      if (localStorage.getItem('xihu_usage_dismissed') === '1') {
+        usageGuide.style.display = 'none';
+      }
+      usageClose.addEventListener('click', () => {
+        usageGuide.style.display = 'none';
+        localStorage.setItem('xihu_usage_dismissed', '1');
+      });
+    }
+
     console.log('🏥 西湖生物材料销售助手已就绪');
     console.log('  ⌘K / Ctrl+K — 聚焦搜索');
     console.log('  ESC — 关闭报价面板');

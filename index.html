@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>西湖生物材料 — 销售助手</title>
+  <meta name="theme-color" content="#1a5276">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="西湖销售助手">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="css/style.css">
   <script src="data.js" defer></script>
   <script src="js/app.js" defer></script>
@@ -39,6 +46,14 @@
     <div class="content-header">
       <h2 id="contentTitle">全部产品</h2>
       <span class="result-count" id="resultCount"></span>
+    </div>
+    <div class="usage-guide" id="usageGuide">
+      <span class="usage-step"><b>1</b> 搜索或左侧选分类</span>
+      <span class="usage-arrow">→</span>
+      <span class="usage-step"><b>2</b> 点产品旁 <span class="usage-plus">+</span> 加入报价</span>
+      <span class="usage-arrow">→</span>
+      <span class="usage-step"><b>3</b> 右上角 📝 复制/打印报价</span>
+      <button class="usage-close" id="usageClose" title="知道了">✕</button>
     </div>
     <div id="productList"></div>
   </main>

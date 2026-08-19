@@ -1,0 +1,15 @@
+{
+  "name": "西湖生物材料 · 销售助手",
+  "short_name": "西湖销售助手",
+  "description": "西湖生物材料有限公司产品查询与报价工具",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#1a5276",
+  "background_color": "#1a5276",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
