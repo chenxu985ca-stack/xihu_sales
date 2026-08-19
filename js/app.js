@@ -340,7 +340,7 @@
 
     let html = `<table class="product-table">
       <thead><tr>
-        <th>编码</th><th>产品名称</th><th>分类</th><th>包装规格</th><th>单位</th><th>价格 (¥)</th><th></th>
+        <th>编码</th><th>产品名称</th><th>包装规格</th><th>单位</th><th>价格 (¥)</th><th>分类</th><th></th>
       </tr></thead><tbody>`;
 
     for (const key of groupOrder) {
@@ -353,10 +353,10 @@
       html += `<tr class="base-row" style="background:#f8fafc;border-top:2px solid var(--border);">
         <td class="code" style="color:var(--text-light);">${isStar ? '⭐ ' : ''}${variants.length}个规格</td>
         <td class="name" style="font-weight:700;">${escHtml(baseName)}</td>
+        <td style="color:var(--text-light);font-size:12px;">—</td>
+        <td style="color:var(--text-light);font-size:12px;">—</td>
+        <td style="color:var(--text-light);font-size:12px;">—</td>
         <td><span class="cat-tag">${escHtml(category)}</span></td>
-        <td style="color:var(--text-light);font-size:12px;">—</td>
-        <td style="color:var(--text-light);font-size:12px;">—</td>
-        <td style="color:var(--text-light);font-size:12px;">—</td>
         <td></td>
       </tr>`;
 
@@ -366,10 +366,10 @@
         html += `<tr class="variant-row">
           <td class="code">${escHtml(p.code || '—')}</td>
           <td class="name">${escHtml(p.name)}</td>
-          <td></td>
           <td>${escHtml(p.spec || '—')}</td>
           <td>${escHtml(p.unit || '—')}</td>
           <td class="price">${formatPrice(p.price)}</td>
+          <td></td>
           <td class="actions-cell">
             <button class="btn-sm btn-add${inQuote ? ' added' : ''}" data-action="add-quote" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}" data-spec="${escJs(p.spec)}">${inQuote ? '✓ 已加' : '+ 报价'}</button>
             <button class="btn-share" data-action="share-product" data-code="${escJs(p.code)}" data-name="${escJs(p.name)}" data-spec="${escJs(p.spec)}" title="复制产品信息">📋</button>
@@ -587,11 +587,11 @@
   /** 生成报价单纯文本（复制/分享共用） */
   function quoteText() {
     const total = quoteItems.reduce((sum, i) => sum + i.price * i.qty * quoteDiscount / 10, 0);
-    const line = '─'.repeat(30);
+    const line = '─'.repeat(10);
     const blocks = quoteItems.map((item, idx) => {
       const head = item.spec ? `${idx + 1}. ${item.name}  ${item.spec}` : `${idx + 1}. ${item.name}`;
       const sub = (item.price * item.qty * quoteDiscount / 10).toFixed(2);
-      const tail = `   ${item.code} · ${item.qty}${item.unit} × ${item.price.toFixed(2)} = ${sub}`;
+      const tail = `   · ${item.qty}${item.unit} × ${item.price.toFixed(2)} = ${sub}`;
       return head + '\n' + tail;
     });
     return [
