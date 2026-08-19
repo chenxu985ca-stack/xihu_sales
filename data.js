@@ -52,8 +52,6 @@ window.XIHU_DATA = {
     "正畸工具",
     "正畸弹性体",
     "正畸钳",
-    "正畸钳(天工)",
-    "正畸钳(非凡)",
     "正畸附件",
     "焊接型其他颊面管",
     "焊接型揭盖颊面管",
@@ -2357,7 +2355,7 @@ window.XIHU_DATA = {
       "name": "医用带环空盒（16#-32#）",
       "category": "带环附件",
       "unit": "套",
-      "spec": "1×1",
+      "spec": "上下牙各1套 1×1",
       "price": 320.0,
       "baseName": "医用带环空盒",
       "note": ""
@@ -2367,49 +2365,29 @@ window.XIHU_DATA = {
       "name": "医用带环空盒（31#-44#）",
       "category": "带环附件",
       "unit": "套",
-      "spec": "1×1",
+      "spec": "上下牙各1套 1×1",
       "price": 320.0,
       "baseName": "医用带环空盒",
-      "note": ""
-    },
-    {
-      "code": "B180-11",
-      "name": "医用带环空盒（16#-32#）",
-      "category": "带环附件",
-      "unit": "套",
-      "spec": "2×1",
-      "price": 320.0,
-      "baseName": "医用带环空盒（16#-32#）",
-      "note": ""
-    },
-    {
-      "code": "B180-21",
-      "name": "医用带环空盒（31#-44#）",
-      "category": "带环附件",
-      "unit": "套",
-      "spec": "2×1",
-      "price": 320.0,
-      "baseName": "医用带环空盒（31#-44#）",
-      "note": ""
-    },
-    {
-      "code": "B180-41",
-      "name": "医用带环空盒（09#-36#四向）",
-      "category": "带环附件",
-      "unit": "套",
-      "spec": "4×1",
-      "price": 640.0,
-      "baseName": "医用带环空盒（09#-36#四向）",
       "note": ""
     },
     {
       "code": "B180-31",
-      "name": "医用带环空盒（31#-44#四向）",
+      "name": "医用带环空盒（31#-44#）",
       "category": "带环附件",
       "unit": "套",
-      "spec": "4×1",
+      "spec": "四个方向各1套 1×1",
       "price": 640.0,
-      "baseName": "医用带环空盒（31#-44#四向）",
+      "baseName": "医用带环空盒",
+      "note": ""
+    },
+    {
+      "code": "B180-41",
+      "name": "医用带环空盒（9#-36#）",
+      "category": "带环附件",
+      "unit": "套",
+      "spec": "四个方向各1套 1×1",
+      "price": 640.0,
+      "baseName": "医用带环空盒",
       "note": ""
     },
     {
@@ -5005,7 +4983,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-01",
       "name": "末端切断钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5015,7 +4993,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-02",
       "name": "细丝切断钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5025,7 +5003,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-03",
       "name": "粗丝切断钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5035,7 +5013,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-04",
       "name": "细丝成形钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5045,7 +5023,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-05",
       "name": "细丝成形刻断钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5055,7 +5033,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-06",
       "name": "小日月钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5065,7 +5043,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-07",
       "name": "转矩成形钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5075,7 +5053,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-08",
       "name": "带环去除钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5085,7 +5063,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-09",
       "name": "梯形钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5095,7 +5073,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-10",
       "name": "托槽去除钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5105,7 +5083,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-11",
       "name": "霍氏钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5115,7 +5093,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-12",
       "name": "后牙托槽去除钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5125,7 +5103,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-13",
       "name": "KIM钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5135,7 +5113,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-14",
       "name": "垂直曲弯制钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5145,7 +5123,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-15",
       "name": "粘接剂去除钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5155,7 +5133,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-16",
       "name": "分牙圈放置钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5165,7 +5143,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-17",
       "name": "游离钩夹紧钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5175,7 +5153,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-18",
       "name": "末端回弯钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5185,7 +5163,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-19",
       "name": "多功能钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5195,7 +5173,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-20",
       "name": "三喙钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5205,7 +5183,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-21",
       "name": "梯形半月钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5215,7 +5193,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-22",
       "name": "颊面管去盖钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 640,
@@ -5225,7 +5203,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-23",
       "name": "末端切平钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5235,7 +5213,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-24",
       "name": "镍钛回弯钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5245,7 +5223,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-25",
       "name": "V形钳（非凡）",
-      "category": "正畸钳(非凡)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5255,7 +5233,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-01",
       "name": "末端切断钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5265,7 +5243,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-02",
       "name": "细丝切断钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5275,7 +5253,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-03",
       "name": "粗丝切断钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5285,7 +5263,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-04",
       "name": "细丝成形钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5295,7 +5273,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-05",
       "name": "细丝成形刻断钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5305,7 +5283,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-06",
       "name": "小日月钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5315,7 +5293,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-07",
       "name": "转矩成形钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5325,7 +5303,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-08",
       "name": "带环去除钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5335,7 +5313,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-09",
       "name": "梯形钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5345,7 +5323,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-10",
       "name": "托槽去除钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5355,7 +5333,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-11",
       "name": "霍氏钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5365,7 +5343,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-12",
       "name": "后牙托槽去除钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5375,7 +5353,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-13",
       "name": "KIM钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5385,7 +5363,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-14",
       "name": "垂直曲弯制钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5395,7 +5373,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-15",
       "name": "粘接剂去除钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5405,7 +5383,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-16",
       "name": "分牙圈放置钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5415,7 +5393,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-17",
       "name": "游离钩夹紧钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5425,7 +5403,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-18",
       "name": "末端回弯钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5435,7 +5413,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-19",
       "name": "多功能钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5445,7 +5423,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-20",
       "name": "三喙钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5455,7 +5433,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-21",
       "name": "梯形半月钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5465,7 +5443,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-22",
       "name": "颊面管去盖钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 520,
@@ -5475,7 +5453,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-23",
       "name": "末端切平钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5485,7 +5463,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-24",
       "name": "镍钛回弯钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5495,7 +5473,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-25",
       "name": "V形钳（天工）",
-      "category": "正畸钳(天工)",
+      "category": "正畸钳",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -6413,5 +6391,5 @@ window.XIHU_DATA = {
       "note": ""
     }
   ],
-  "totalProducts": 633
+  "totalProducts": 631
 };
