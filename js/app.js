@@ -13,7 +13,7 @@
   let favorites = []; // {code, name}[]
   let activeCategory = null;
   let searchQuery = '';
-  const collapsedGroups = new Set(); // 折叠的侧边栏分组名
+  const expandedGroups = new Set(); // 展开的侧边栏分组名（默认全折叠）
 
   // ── Admin Changes Merge ──
 
@@ -249,15 +249,15 @@
     const groupedCats = new Set();
 
     for (const [groupName, cats] of Object.entries(SIDEBAR_GROUPS)) {
-      const collapsed = collapsedGroups.has(groupName);
+      const expanded = expandedGroups.has(groupName);
       // 该分组下的实际分类
       const visibleCats = cats.filter((c) => products.some((p) => p.category === c));
       const groupCount = visibleCats.reduce((sum, c) => sum + products.filter((p) => p.category === c).length, 0);
       if (groupCount === 0) continue;
 
-      html += `<div class="sidebar-group${collapsed ? ' collapsed' : ''}">
+      html += `<div class="sidebar-group${expanded ? '' : ' collapsed'}">
         <div class="sidebar-title" data-group="${escHtml(groupName)}">
-          <span class="group-caret">${collapsed ? '▸' : '▾'}</span>${groupName}
+          <span class="group-caret">${expanded ? '▾' : '▸'}</span>${groupName}
           <span class="group-count">${groupCount}</span>
         </div>
         <div class="sidebar-group-body">
@@ -278,11 +278,11 @@
     const allCats = [...new Set(products.map((p) => p.category))];
     const ungrouped = allCats.filter((c) => !groupedCats.has(c));
     if (ungrouped.length > 0) {
-      const collapsed = collapsedGroups.has('__ungrouped__');
+      const expanded = expandedGroups.has('__ungrouped__');
       const groupCount = ungrouped.reduce((sum, c) => sum + products.filter((p) => p.category === c).length, 0);
-      html += `<div class="sidebar-group${collapsed ? ' collapsed' : ''}">
+      html += `<div class="sidebar-group${expanded ? '' : ' collapsed'}">
         <div class="sidebar-title" data-group="__ungrouped__">
-          <span class="group-caret">${collapsed ? '▸' : '▾'}</span>📦 其他
+          <span class="group-caret">${expanded ? '▾' : '▸'}</span>📦 其他
           <span class="group-count">${groupCount}</span>
         </div>
         <div class="sidebar-group-body">
@@ -305,20 +305,20 @@
 
   /** 切换侧边栏分组的折叠/展开 */
   function toggleGroup(groupName) {
-    if (collapsedGroups.has(groupName)) collapsedGroups.delete(groupName);
-    else collapsedGroups.add(groupName);
-    saveCollapsedGroups();
+    if (expandedGroups.has(groupName)) expandedGroups.delete(groupName);
+    else expandedGroups.add(groupName);
+    saveExpandedGroups();
     renderSidebar();
   }
 
-  function saveCollapsedGroups() {
-    localStorage.setItem('xihu_collapsed_groups', JSON.stringify([...collapsedGroups]));
+  function saveExpandedGroups() {
+    localStorage.setItem('xihu_expanded_groups', JSON.stringify([...expandedGroups]));
   }
 
-  function loadCollapsedGroups() {
+  function loadExpandedGroups() {
     try {
-      const saved = localStorage.getItem('xihu_collapsed_groups');
-      if (saved) JSON.parse(saved).forEach((g) => collapsedGroups.add(g));
+      const saved = localStorage.getItem('xihu_expanded_groups');
+      if (saved) JSON.parse(saved).forEach((g) => expandedGroups.add(g));
     } catch (e) { /* ignore */ }
   }
 
@@ -806,7 +806,7 @@
   function init() {
     loadQuote();
     loadFavorites();
-    loadCollapsedGroups();
+    loadExpandedGroups();
     mergeAdminChanges();
     renderSidebar();
     renderProducts();
