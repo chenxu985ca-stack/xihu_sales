@@ -32,9 +32,9 @@ window.XIHU_DATA = {
     "HXZ2.0自锁托槽",
     "仿生整体方丝弓系列",
     "仿生整体直丝弓系列",
-    "光固化型-牙釉质粘合树脂",
-    "光固化型-牙釉质粘合树脂(绿胶)",
-    "光固化型-牙釉质粘合树脂(隐形正畸附件粘结剂)",
+    "光固化型",
+    "光固化型-(绿胶)",
+    "光固化型-隐形正畸附件粘结剂",
     "光带环",
     "全程式传统直丝弓系列",
     "其他托槽",
@@ -2355,7 +2355,7 @@ window.XIHU_DATA = {
       "name": "医用带环空盒（16#-32#）",
       "category": "带环附件",
       "unit": "套",
-      "spec": "上下牙各1套 1×1",
+      "spec": "上下牙各1套 2×1",
       "price": 320.0,
       "baseName": "医用带环空盒",
       "note": ""
@@ -2365,7 +2365,7 @@ window.XIHU_DATA = {
       "name": "医用带环空盒（31#-44#）",
       "category": "带环附件",
       "unit": "套",
-      "spec": "上下牙各1套 1×1",
+      "spec": "上下牙各1套 2×1",
       "price": 320.0,
       "baseName": "医用带环空盒",
       "note": ""
@@ -2375,7 +2375,7 @@ window.XIHU_DATA = {
       "name": "医用带环空盒（31#-44#）",
       "category": "带环附件",
       "unit": "套",
-      "spec": "四个方向各1套 1×1",
+      "spec": "四个方向各1套 4×1",
       "price": 640.0,
       "baseName": "医用带环空盒",
       "note": ""
@@ -2385,7 +2385,7 @@ window.XIHU_DATA = {
       "name": "医用带环空盒（9#-36#）",
       "category": "带环附件",
       "unit": "套",
-      "spec": "四个方向各1套 1×1",
+      "spec": "四个方向各1套 4×1",
       "price": 640.0,
       "baseName": "医用带环空盒",
       "note": ""
@@ -2947,7 +2947,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "焊接型 10×1",
       "price": 30.0,
-      "baseName": "舌侧扣(圆底) 焊接型",
+      "baseName": "舌侧扣",
       "note": ""
     },
     {
@@ -2957,7 +2957,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "焊接型 10×1",
       "price": 30.0,
-      "baseName": "舌侧扣(方底) 焊接型",
+      "baseName": "舌侧扣",
       "note": ""
     },
     {
@@ -2967,7 +2967,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "粘接型 10×1",
       "price": 35.0,
-      "baseName": "网底舌侧扣 粘接型",
+      "baseName": "舌侧扣",
       "note": ""
     },
     {
@@ -3057,7 +3057,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "粘接型 10×1",
       "price": 35.0,
-      "baseName": "网底舌侧拉环",
+      "baseName": "舌侧拉环",
       "note": ""
     },
     {
@@ -3897,7 +3897,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "1000×1",
       "price": 60.0,
-      "baseName": "结扎圈(透明)",
+      "baseName": "结扎圈",
       "note": ""
     },
     {
@@ -3907,7 +3907,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "100×1",
       "price": 40.0,
-      "baseName": "结扎圈(透明)",
+      "baseName": "结扎圈",
       "note": ""
     },
     {
@@ -3917,7 +3917,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "1000×1",
       "price": 60.0,
-      "baseName": "结扎圈(彩色)",
+      "baseName": "结扎圈",
       "note": ""
     },
     {
@@ -3927,7 +3927,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "100×1",
       "price": 40.0,
-      "baseName": "结扎圈(彩色)",
+      "baseName": "结扎圈",
       "note": ""
     },
     {
@@ -3947,7 +3947,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "100×1",
       "price": 360.0,
-      "baseName": "橡皮圈2.5(口内牵引)",
+      "baseName": "橡皮圈",
       "note": ""
     },
     {
@@ -3957,7 +3957,7 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "100×1",
       "price": 360.0,
-      "baseName": "橡皮圈3.5(口内牵引)",
+      "baseName": "橡皮圈",
       "note": ""
     },
     {
@@ -3967,93 +3967,93 @@ window.XIHU_DATA = {
       "unit": "袋",
       "spec": "1000×1",
       "price": 150.0,
-      "baseName": "橡皮分牙圈",
+      "baseName": "橡皮圈",
       "note": ""
     },
     {
       "code": "E210-11",
       "name": "光固化型(标准包装)",
-      "category": "光固化型-牙釉质粘合树脂",
+      "category": "光固化型",
       "unit": "盒",
       "spec": "糊剂3.5g×3+液剂8ml+酸蚀剂2.5ml 5×1",
       "price": 218.0,
-      "baseName": "光固化型(标准包装)",
+      "baseName": "光固化型(套装)",
       "note": ""
     },
     {
       "code": "E210-12",
       "name": "光固化型(迷你包装)",
-      "category": "光固化型-牙釉质粘合树脂",
+      "category": "光固化型",
       "unit": "盒",
       "spec": "糊剂3.5g×1+液剂3ml+酸蚀剂2.5ml 3×1",
       "price": 110.0,
-      "baseName": "光固化型(迷你包装)",
+      "baseName": "光固化型(套装)",
       "note": ""
     },
     {
       "code": "E210-31",
       "name": "糊剂(光固化)",
-      "category": "光固化型-牙釉质粘合树脂",
+      "category": "光固化型",
       "unit": "支",
       "spec": "3.5g 1×1",
       "price": 44.0,
-      "baseName": "糊剂(光固化)",
+      "baseName": "光固化型(单独包装)",
       "note": ""
     },
     {
       "code": "E210-21",
       "name": "液剂(光固化)",
-      "category": "光固化型-牙釉质粘合树脂",
+      "category": "光固化型",
       "unit": "瓶",
       "spec": "8ml 1×1",
       "price": 66.0,
-      "baseName": "液剂(光固化)",
+      "baseName": "光固化型(单独包装)",
       "note": ""
     },
     {
       "code": "E310-01",
       "name": "绿胶套装(标准包装)",
-      "category": "光固化型-牙釉质粘合树脂(绿胶)",
+      "category": "光固化型-(绿胶)",
       "unit": "盒",
       "spec": "绿胶糊剂4.0g×2+液剂8ml+酸蚀剂2.5ml 4×1",
       "price": 400.0,
-      "baseName": "绿胶套装(标准包装)",
+      "baseName": "绿胶(套装)",
       "note": "🌟 明星产品"
     },
     {
       "code": "E310-02",
       "name": "绿胶套装(迷你包装)",
-      "category": "光固化型-牙釉质粘合树脂(绿胶)",
+      "category": "光固化型-(绿胶)",
       "unit": "盒",
       "spec": "绿胶糊剂3.5g×1+液剂3ml+酸蚀剂2.5ml 3×1",
       "price": 220.0,
-      "baseName": "绿胶套装(迷你包装)",
+      "baseName": "绿胶(套装)",
       "note": "🌟 明星产品"
     },
     {
       "code": "E310-11",
       "name": "绿胶糊剂",
-      "category": "光固化型-牙釉质粘合树脂(绿胶)",
+      "category": "光固化型-(绿胶)",
       "unit": "支",
       "spec": "4.0g 1×1",
       "price": 157,
-      "baseName": "绿胶糊剂",
+      "baseName": "绿胶(单独包装)",
       "note": ""
     },
     {
       "code": "E310-21",
       "name": "绿胶液剂",
-      "category": "光固化型-牙釉质粘合树脂(绿胶)",
+      "category": "光固化型-(绿胶)",
       "unit": "瓶",
       "spec": "8ml 1×1",
       "price": 57,
-      "baseName": "绿胶液剂",
+      "baseName": "绿胶(单独包装)",
       "note": ""
     },
     {
       "code": "E710-01",
       "name": "隐形正畸附件粘结剂 套装(标准包装)",
-      "category": "光固化型-牙釉质粘合树脂(隐形正畸附件粘结剂)",
+      "category": "光固化型-隐形正畸附件粘结剂",
       "unit": "盒",
       "spec": "糊剂2.0g×2+液剂3ml+酸蚀剂2.5ml 4×1",
       "price": 198.0,
@@ -4067,7 +4067,7 @@ window.XIHU_DATA = {
       "unit": "盒",
       "spec": "液剂10ml×1+糊剂3.5g×3+酸蚀剂2.5ml+附件",
       "price": 160.0,
-      "baseName": "非调拌型标准包装",
+      "baseName": "非调拌(套装)",
       "note": ""
     },
     {
@@ -4077,7 +4077,7 @@ window.XIHU_DATA = {
       "unit": "盒",
       "spec": "液剂3ml×1+糊剂3.5g×1+酸蚀剂2.5ml+附件",
       "price": 90.0,
-      "baseName": "非调拌型迷你包装",
+      "baseName": "非调拌(套装)",
       "note": ""
     },
     {
@@ -4087,7 +4087,7 @@ window.XIHU_DATA = {
       "unit": "瓶",
       "spec": "10ml/瓶",
       "price": 45.0,
-      "baseName": "非调拌型-液剂（标准装）",
+      "baseName": "非调拌(单独包装)",
       "note": ""
     },
     {
@@ -4097,7 +4097,7 @@ window.XIHU_DATA = {
       "unit": "支",
       "spec": "3.5g/支",
       "price": 34.0,
-      "baseName": "非调拌型-糊剂",
+      "baseName": "非调拌(单独包装)",
       "note": ""
     },
     {
@@ -4107,7 +4107,7 @@ window.XIHU_DATA = {
       "unit": "瓶",
       "spec": "5ml/支",
       "price": 16.0,
-      "baseName": "酸蚀剂1型",
+      "baseName": "酸蚀剂(单独包装)",
       "note": ""
     },
     {
@@ -4117,7 +4117,7 @@ window.XIHU_DATA = {
       "unit": "支",
       "spec": "5ml/支",
       "price": 24.0,
-      "baseName": "酸蚀剂2型",
+      "baseName": "酸蚀剂(单独包装)",
       "note": ""
     },
     {
@@ -4127,7 +4127,7 @@ window.XIHU_DATA = {
       "unit": "盒",
       "spec": "蓝胶Ⅰ型糊剂5g×1+酸蚀剂2.5mlx2",
       "price": 158.0,
-      "baseName": "蓝胶Ⅰ型套装",
+      "baseName": "蓝胶(套装)",
       "note": "🌟 明星产品"
     },
     {
@@ -4137,7 +4137,7 @@ window.XIHU_DATA = {
       "unit": "盒",
       "spec": "蓝胶Ⅰ型糊剂5g×2+酸蚀剂2.5mlx3",
       "price": 298.0,
-      "baseName": "蓝胶Ⅰ型套装(加量)",
+      "baseName": "蓝胶(套装)",
       "note": "🌟 明星产品"
     },
     {
@@ -4147,7 +4147,7 @@ window.XIHU_DATA = {
       "unit": "盒",
       "spec": "蓝胶Ⅱ型糊剂5g×1+酸蚀剂2.5ml",
       "price": 198.0,
-      "baseName": "蓝胶Ⅱ型套装",
+      "baseName": "蓝胶(套装)",
       "note": "🌟 明星产品"
     },
     {
@@ -4157,7 +4157,7 @@ window.XIHU_DATA = {
       "unit": "支",
       "spec": "5g/支",
       "price": 140.0,
-      "baseName": "蓝胶Ⅰ型-光固化型糊剂",
+      "baseName": "蓝胶(单独包装)",
       "note": ""
     },
     {
@@ -4167,7 +4167,7 @@ window.XIHU_DATA = {
       "unit": "支",
       "spec": "5g/支",
       "price": 180.0,
-      "baseName": "蓝胶Ⅱ型-光固化型糊剂",
+      "baseName": "蓝胶(单独包装)",
       "note": ""
     },
     {
@@ -4937,7 +4937,7 @@ window.XIHU_DATA = {
       "unit": "套",
       "spec": "1×1",
       "price": 480.0,
-      "baseName": "方头型支抗钉工具 B-Ⅰ（直柄）",
+      "baseName": "支抗钉工具",
       "note": ""
     },
     {
@@ -4947,7 +4947,7 @@ window.XIHU_DATA = {
       "unit": "套",
       "spec": "1×1",
       "price": 600.0,
-      "baseName": "三芯型支抗钉工具 B-Ⅱ（直柄）",
+      "baseName": "支抗钉工具",
       "note": ""
     },
     {
@@ -4957,7 +4957,7 @@ window.XIHU_DATA = {
       "unit": "套",
       "spec": "1×1",
       "price": 1720.0,
-      "baseName": "三芯型支抗钉工具 C-Ⅰ（弯机手柄）",
+      "baseName": "支抗钉工具",
       "note": ""
     },
     {
@@ -4967,7 +4967,7 @@ window.XIHU_DATA = {
       "unit": "套",
       "spec": "1×1",
       "price": 1720.0,
-      "baseName": "三芯型支抗钉工具 C-Ⅱ（弯机手柄）",
+      "baseName": "支抗钉工具",
       "note": ""
     },
     {
@@ -4977,7 +4977,7 @@ window.XIHU_DATA = {
       "unit": "套",
       "spec": "1×1",
       "price": 1720.0,
-      "baseName": "方头型支抗钉工具",
+      "baseName": "支抗钉工具",
       "note": ""
     },
     {
