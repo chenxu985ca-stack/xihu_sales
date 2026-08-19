@@ -29,15 +29,19 @@ window.XIHU_DATA = {
   "categories": [
     "24K镀金前牙根管桩",
     "24K镀金后牙根管桩",
-    "HXZ2.0自锁托槽",
+    "HXZ2.0",
     "仿生整体方丝弓系列",
     "仿生整体直丝弓系列",
+    "光固化型-(绿胶)",
+    "光固化型-(蓝胶)",
+    "光固化型-普通",
+    "光固化型-隐形正畸附件粘结剂",
     "光带环",
     "全程式传统直丝弓系列",
     "其他托槽",
     "出口型带环",
     "功能矫治器",
-    "卓越系列自锁托槽",
+    "卓越系列",
     "圆丝带环",
     "带环附件",
     "拉钩/开口器",
@@ -49,18 +53,13 @@ window.XIHU_DATA = {
     "正畸工具",
     "正畸弹性体",
     "正畸钳",
+    "正畸钳(天工)",
+    "正畸钳(非凡)",
     "正畸附件",
     "焊接型其他颊面管",
     "焊接型揭盖颊面管",
     "焊接型直丝弓颊面管",
     "燕尾方丝弓系列",
-    "牙釉质粘合树脂-光固化型",
-    "牙釉质粘合树脂-光固化型-(绿胶)",
-    "牙釉质粘合树脂-光固化型-隐形正畸附件粘结剂",
-    "牙釉质粘合树脂-蓝胶系列",
-    "牙釉质粘合树脂-非调拌型",
-    "瓷悦系列陶瓷自锁托槽",
-    "瓷缘系列陶瓷自锁托槽",
     "直丝弓带环",
     "精致直丝弓系列",
     "经营类产品",
@@ -74,10 +73,13 @@ window.XIHU_DATA = {
     "金属网底直丝弓系列",
     "钛合金支抗钉(三芯型)",
     "钛合金支抗钉(方头型)",
+    "陶瓷瓷悦系列",
+    "陶瓷瓷缘系列",
     "陶瓷直丝弓托槽",
-    "隐力系列自锁托槽",
+    "隐力系列",
     "隐形方丝弓系列",
-    "隐形直丝弓系列"
+    "隐形直丝弓系列",
+    "非调拌型"
   ],
   "products": [
     {
@@ -1083,7 +1085,7 @@ window.XIHU_DATA = {
     {
       "code": "A5111-12",
       "name": "瓷缘系列陶瓷被动自锁托槽（高转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
+      "category": "陶瓷瓷缘系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 1600,
@@ -1093,7 +1095,7 @@ window.XIHU_DATA = {
     {
       "code": "A5121-12",
       "name": "瓷缘系列陶瓷被动自锁托槽（高转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
+      "category": "陶瓷瓷缘系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1600,
@@ -1103,7 +1105,7 @@ window.XIHU_DATA = {
     {
       "code": "A5131-12",
       "name": "瓷缘系列陶瓷被动自锁托槽（高转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
+      "category": "陶瓷瓷缘系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 1600,
@@ -1113,7 +1115,7 @@ window.XIHU_DATA = {
     {
       "code": "A5111-13",
       "name": "瓷缘系列陶瓷被动自锁托槽（低转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
+      "category": "陶瓷瓷缘系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 1600,
@@ -1123,7 +1125,7 @@ window.XIHU_DATA = {
     {
       "code": "A5121-13",
       "name": "瓷缘系列陶瓷被动自锁托槽（低转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
+      "category": "陶瓷瓷缘系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1600,
@@ -1133,7 +1135,7 @@ window.XIHU_DATA = {
     {
       "code": "A5131-13",
       "name": "瓷缘系列陶瓷被动自锁托槽（低转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
+      "category": "陶瓷瓷缘系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 1600,
@@ -1143,7 +1145,7 @@ window.XIHU_DATA = {
     {
       "code": "A5111-11",
       "name": "瓷缘系列陶瓷被动自锁托槽（标准转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
+      "category": "陶瓷瓷缘系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 1600,
@@ -1153,7 +1155,7 @@ window.XIHU_DATA = {
     {
       "code": "A5121-11",
       "name": "瓷缘系列陶瓷被动自锁托槽（标准转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
+      "category": "陶瓷瓷缘系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1600,
@@ -1163,7 +1165,7 @@ window.XIHU_DATA = {
     {
       "code": "A5131-11",
       "name": "瓷缘系列陶瓷被动自锁托槽（标准转矩）",
-      "category": "瓷缘系列陶瓷自锁托槽",
+      "category": "陶瓷瓷缘系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 1600,
@@ -1173,7 +1175,7 @@ window.XIHU_DATA = {
     {
       "code": "A0711-11",
       "name": "瓷悦系列陶瓷被动自锁托槽（ROTH·无钩）",
-      "category": "瓷悦系列陶瓷自锁托槽",
+      "category": "陶瓷瓷悦系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 1600,
@@ -1183,7 +1185,7 @@ window.XIHU_DATA = {
     {
       "code": "A0711-12",
       "name": "瓷悦系列陶瓷被动自锁托槽（ROTH·3带钩）",
-      "category": "瓷悦系列陶瓷自锁托槽",
+      "category": "陶瓷瓷悦系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1600,
@@ -1193,7 +1195,7 @@ window.XIHU_DATA = {
     {
       "code": "A0711-13",
       "name": "瓷悦系列陶瓷被动自锁托槽（ROTH·345带钩）",
-      "category": "瓷悦系列陶瓷自锁托槽",
+      "category": "陶瓷瓷悦系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 1600,
@@ -1203,7 +1205,7 @@ window.XIHU_DATA = {
     {
       "code": "A0712-11",
       "name": "瓷悦系列陶瓷被动自锁托槽（MBT·无钩）",
-      "category": "瓷悦系列陶瓷自锁托槽",
+      "category": "陶瓷瓷悦系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 1600,
@@ -1213,7 +1215,7 @@ window.XIHU_DATA = {
     {
       "code": "A0712-12",
       "name": "瓷悦系列陶瓷被动自锁托槽（MBT·3带钩）",
-      "category": "瓷悦系列陶瓷自锁托槽",
+      "category": "陶瓷瓷悦系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1600,
@@ -1223,7 +1225,7 @@ window.XIHU_DATA = {
     {
       "code": "A0712-13",
       "name": "瓷悦系列陶瓷被动自锁托槽（MBT·345带钩）",
-      "category": "瓷悦系列陶瓷自锁托槽",
+      "category": "陶瓷瓷悦系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 1600,
@@ -1233,7 +1235,7 @@ window.XIHU_DATA = {
     {
       "code": "A8242-31",
       "name": "卓越系列Ⅵ代被动自锁托槽（MBT·无钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 1200,
@@ -1243,7 +1245,7 @@ window.XIHU_DATA = {
     {
       "code": "A8242-32",
       "name": "卓越系列Ⅵ代被动自锁托槽（MBT·3带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1200,
@@ -1253,7 +1255,7 @@ window.XIHU_DATA = {
     {
       "code": "A8242-33",
       "name": "卓越系列Ⅵ代被动自锁托槽（MBT·345带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 1200,
@@ -1263,7 +1265,7 @@ window.XIHU_DATA = {
     {
       "code": "A8272-31",
       "name": "卓越系列Ⅵ代被动自锁托槽（ROTH·无钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 1200,
@@ -1273,7 +1275,7 @@ window.XIHU_DATA = {
     {
       "code": "A8272-32",
       "name": "卓越系列Ⅵ代被动自锁托槽（ROTH·3带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1200,
@@ -1283,7 +1285,7 @@ window.XIHU_DATA = {
     {
       "code": "A8272-33",
       "name": "卓越系列Ⅵ代被动自锁托槽（ROTH·345带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 1200,
@@ -1293,7 +1295,7 @@ window.XIHU_DATA = {
     {
       "code": "A0512-32",
       "name": "卓越系列Ⅴ代被动自锁托槽（标准转矩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "标准转矩 20×1",
       "price": 1200,
@@ -1303,7 +1305,7 @@ window.XIHU_DATA = {
     {
       "code": "A0522-32",
       "name": "卓越系列Ⅴ代被动自锁托槽（高转矩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "高转矩 20×1",
       "price": 1200,
@@ -1313,7 +1315,7 @@ window.XIHU_DATA = {
     {
       "code": "A0532-32",
       "name": "卓越系列Ⅴ代被动自锁托槽（低转矩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "低转矩 20×1",
       "price": 1200,
@@ -1323,7 +1325,7 @@ window.XIHU_DATA = {
     {
       "code": "A0412-31",
       "name": "卓越系列Ⅳ代被动自锁托槽（标准转矩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "标准转矩 20×1",
       "price": 1000,
@@ -1333,7 +1335,7 @@ window.XIHU_DATA = {
     {
       "code": "A0422-31",
       "name": "卓越系列Ⅳ代被动自锁托槽（高转矩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "高转矩 20×1",
       "price": 1000,
@@ -1343,7 +1345,7 @@ window.XIHU_DATA = {
     {
       "code": "A0432-31",
       "name": "卓越系列Ⅳ代被动自锁托槽（低转矩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "低转矩 20×1",
       "price": 1000,
@@ -1353,7 +1355,7 @@ window.XIHU_DATA = {
     {
       "code": "A0612-31",
       "name": "卓越系列Ⅳ代2.0被动自锁托槽（标准转矩·无钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 1000,
@@ -1363,7 +1365,7 @@ window.XIHU_DATA = {
     {
       "code": "A0612-32",
       "name": "卓越系列Ⅳ代2.0被动自锁托槽（标准转矩·3带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1000,
@@ -1373,7 +1375,7 @@ window.XIHU_DATA = {
     {
       "code": "A0612-33",
       "name": "卓越系列Ⅳ代2.0被动自锁托槽（标准转矩·345带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 1000,
@@ -1383,7 +1385,7 @@ window.XIHU_DATA = {
     {
       "code": "A0622-31",
       "name": "卓越系列Ⅳ代2.0被动自锁托槽（高转矩·无钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 1000,
@@ -1393,7 +1395,7 @@ window.XIHU_DATA = {
     {
       "code": "A0622-32",
       "name": "卓越系列Ⅳ代2.0被动自锁托槽（高转矩·3带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1000,
@@ -1403,7 +1405,7 @@ window.XIHU_DATA = {
     {
       "code": "A0622-33",
       "name": "卓越系列Ⅳ代2.0被动自锁托槽（高转矩·345带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 1000,
@@ -1413,7 +1415,7 @@ window.XIHU_DATA = {
     {
       "code": "A0632-31",
       "name": "卓越系列Ⅳ代2.0被动自锁托槽（低转矩·无钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 1000,
@@ -1423,7 +1425,7 @@ window.XIHU_DATA = {
     {
       "code": "A0632-32",
       "name": "卓越系列Ⅳ代2.0被动自锁托槽（低转矩·3带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1000,
@@ -1433,7 +1435,7 @@ window.XIHU_DATA = {
     {
       "code": "A0632-33",
       "name": "卓越系列Ⅳ代2.0被动自锁托槽（低转矩·345带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 1000,
@@ -1443,7 +1445,7 @@ window.XIHU_DATA = {
     {
       "code": "A0442-31",
       "name": "卓越系列Ⅳ代2.0被动自锁托槽（MBT）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "MBT 20×1",
       "price": 1000,
@@ -1453,7 +1455,7 @@ window.XIHU_DATA = {
     {
       "code": "A8312-32",
       "name": "卓越系列Ⅲ代2.0被动自锁托槽（标准转矩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "标准转矩 20×1",
       "price": 600,
@@ -1463,7 +1465,7 @@ window.XIHU_DATA = {
     {
       "code": "A8322-32",
       "name": "卓越系列Ⅲ代2.0被动自锁托槽（高转矩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "高转矩 20×1",
       "price": 600,
@@ -1473,7 +1475,7 @@ window.XIHU_DATA = {
     {
       "code": "A8332-33",
       "name": "卓越系列Ⅲ代2.0被动自锁托槽（低转矩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "低转矩 20×1",
       "price": 600,
@@ -1483,7 +1485,7 @@ window.XIHU_DATA = {
     {
       "code": "A0312-31",
       "name": "卓越系列Ⅲ代被动自锁托槽（标准转矩·无钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 800,
@@ -1493,7 +1495,7 @@ window.XIHU_DATA = {
     {
       "code": "A0312-32",
       "name": "卓越系列Ⅲ代被动自锁托槽（标准转矩·3带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 800,
@@ -1503,7 +1505,7 @@ window.XIHU_DATA = {
     {
       "code": "A0312-33",
       "name": "卓越系列Ⅲ代被动自锁托槽（标准转矩·345带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 800,
@@ -1513,7 +1515,7 @@ window.XIHU_DATA = {
     {
       "code": "A0212-31",
       "name": "卓越系列Ⅱ代被动自锁托槽（标准转矩·无钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 800,
@@ -1523,7 +1525,7 @@ window.XIHU_DATA = {
     {
       "code": "A0212-32",
       "name": "卓越系列Ⅱ代被动自锁托槽（标准转矩·3带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 800,
@@ -1533,7 +1535,7 @@ window.XIHU_DATA = {
     {
       "code": "A0212-33",
       "name": "卓越系列Ⅱ代被动自锁托槽（标准转矩·345带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 800,
@@ -1543,7 +1545,7 @@ window.XIHU_DATA = {
     {
       "code": "A0222-31",
       "name": "卓越系列Ⅱ代被动自锁托槽（高转矩·无钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 800,
@@ -1553,7 +1555,7 @@ window.XIHU_DATA = {
     {
       "code": "A0222-32",
       "name": "卓越系列Ⅱ代被动自锁托槽（高转矩·3带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 800,
@@ -1563,7 +1565,7 @@ window.XIHU_DATA = {
     {
       "code": "A0222-33",
       "name": "卓越系列Ⅱ代被动自锁托槽（高转矩·345带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 800,
@@ -1573,7 +1575,7 @@ window.XIHU_DATA = {
     {
       "code": "A0232-31",
       "name": "卓越系列Ⅱ代被动自锁托槽（低转矩·无钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "无钩 20×1",
       "price": 800,
@@ -1583,7 +1585,7 @@ window.XIHU_DATA = {
     {
       "code": "A0232-32",
       "name": "卓越系列Ⅱ代被动自锁托槽（低转矩·3带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 800,
@@ -1593,7 +1595,7 @@ window.XIHU_DATA = {
     {
       "code": "A0232-33",
       "name": "卓越系列Ⅱ代被动自锁托槽（低转矩·345带钩）",
-      "category": "卓越系列自锁托槽",
+      "category": "卓越系列",
       "unit": "副",
       "spec": "345带钩 20×1",
       "price": 800,
@@ -1603,7 +1605,7 @@ window.XIHU_DATA = {
     {
       "code": "A8152-31",
       "name": "HXZ2.0自锁托槽（A款·3带钩）",
-      "category": "HXZ2.0自锁托槽",
+      "category": "HXZ2.0",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1200,
@@ -1613,7 +1615,7 @@ window.XIHU_DATA = {
     {
       "code": "A8162-31",
       "name": "HXZ2.0自锁托槽（B款·3带钩）",
-      "category": "HXZ2.0自锁托槽",
+      "category": "HXZ2.0",
       "unit": "副",
       "spec": "3带钩 20×1",
       "price": 1200,
@@ -1623,7 +1625,7 @@ window.XIHU_DATA = {
     {
       "code": "A4112-34",
       "name": "隐力被动自锁托槽（YL A型）",
-      "category": "隐力系列自锁托槽",
+      "category": "隐力系列",
       "unit": "副",
       "spec": "YL A型 20×1",
       "price": 1000,
@@ -3973,7 +3975,7 @@ window.XIHU_DATA = {
     {
       "code": "E210-11",
       "name": "光固化型(标准包装)",
-      "category": "牙釉质粘合树脂-光固化型",
+      "category": "光固化型-普通",
       "unit": "盒",
       "spec": "糊剂3.5g×3+液剂8ml+酸蚀剂2.5ml 5×1",
       "price": 218.0,
@@ -3983,7 +3985,7 @@ window.XIHU_DATA = {
     {
       "code": "E210-12",
       "name": "光固化型(迷你包装)",
-      "category": "牙釉质粘合树脂-光固化型",
+      "category": "光固化型-普通",
       "unit": "盒",
       "spec": "糊剂3.5g×1+液剂3ml+酸蚀剂2.5ml 3×1",
       "price": 110.0,
@@ -3993,7 +3995,7 @@ window.XIHU_DATA = {
     {
       "code": "E210-31",
       "name": "糊剂(光固化)",
-      "category": "牙釉质粘合树脂-光固化型",
+      "category": "光固化型-普通",
       "unit": "支",
       "spec": "3.5g 1×1",
       "price": 44.0,
@@ -4003,7 +4005,7 @@ window.XIHU_DATA = {
     {
       "code": "E210-21",
       "name": "液剂(光固化)",
-      "category": "牙釉质粘合树脂-光固化型",
+      "category": "光固化型-普通",
       "unit": "瓶",
       "spec": "8ml 1×1",
       "price": 66.0,
@@ -4013,7 +4015,7 @@ window.XIHU_DATA = {
     {
       "code": "E310-01",
       "name": "绿胶套装(标准包装)",
-      "category": "牙釉质粘合树脂-光固化型-(绿胶)",
+      "category": "光固化型-(绿胶)",
       "unit": "盒",
       "spec": "绿胶糊剂4.0g×2+液剂8ml+酸蚀剂2.5ml 4×1",
       "price": 400.0,
@@ -4023,7 +4025,7 @@ window.XIHU_DATA = {
     {
       "code": "E310-02",
       "name": "绿胶套装(迷你包装)",
-      "category": "牙釉质粘合树脂-光固化型-(绿胶)",
+      "category": "光固化型-(绿胶)",
       "unit": "盒",
       "spec": "绿胶糊剂3.5g×1+液剂3ml+酸蚀剂2.5ml 3×1",
       "price": 220.0,
@@ -4033,7 +4035,7 @@ window.XIHU_DATA = {
     {
       "code": "E310-11",
       "name": "绿胶糊剂",
-      "category": "牙釉质粘合树脂-光固化型-(绿胶)",
+      "category": "光固化型-(绿胶)",
       "unit": "支",
       "spec": "4.0g 1×1",
       "price": 157,
@@ -4043,7 +4045,7 @@ window.XIHU_DATA = {
     {
       "code": "E310-21",
       "name": "绿胶液剂",
-      "category": "牙釉质粘合树脂-光固化型-(绿胶)",
+      "category": "光固化型-(绿胶)",
       "unit": "瓶",
       "spec": "8ml 1×1",
       "price": 57,
@@ -4053,7 +4055,7 @@ window.XIHU_DATA = {
     {
       "code": "E710-01",
       "name": "隐形正畸附件粘结剂 套装(标准包装)",
-      "category": "牙釉质粘合树脂-光固化型-隐形正畸附件粘结剂",
+      "category": "光固化型-隐形正畸附件粘结剂",
       "unit": "盒",
       "spec": "糊剂2.0g×2+液剂3ml+酸蚀剂2.5ml 4×1",
       "price": 198.0,
@@ -4063,7 +4065,7 @@ window.XIHU_DATA = {
     {
       "code": "E110-11",
       "name": "非调拌型标准包装",
-      "category": "牙釉质粘合树脂-非调拌型",
+      "category": "非调拌型",
       "unit": "盒",
       "spec": "液剂10ml×1+糊剂3.5g×3+酸蚀剂2.5ml+附件",
       "price": 160.0,
@@ -4073,7 +4075,7 @@ window.XIHU_DATA = {
     {
       "code": "E110-12",
       "name": "非调拌型迷你包装",
-      "category": "牙釉质粘合树脂-非调拌型",
+      "category": "非调拌型",
       "unit": "盒",
       "spec": "液剂3ml×1+糊剂3.5g×1+酸蚀剂2.5ml+附件",
       "price": 90.0,
@@ -4083,7 +4085,7 @@ window.XIHU_DATA = {
     {
       "code": "E110-21",
       "name": "非调拌型-液剂（标准装）",
-      "category": "牙釉质粘合树脂-非调拌型",
+      "category": "非调拌型",
       "unit": "瓶",
       "spec": "10ml/瓶",
       "price": 45.0,
@@ -4093,7 +4095,7 @@ window.XIHU_DATA = {
     {
       "code": "E110-31",
       "name": "非调拌型-糊剂",
-      "category": "牙釉质粘合树脂-非调拌型",
+      "category": "非调拌型",
       "unit": "支",
       "spec": "3.5g/支",
       "price": 34.0,
@@ -4103,7 +4105,7 @@ window.XIHU_DATA = {
     {
       "code": "E100-01",
       "name": "酸蚀剂1型",
-      "category": "牙釉质粘合树脂-非调拌型",
+      "category": "非调拌型",
       "unit": "瓶",
       "spec": "5ml/支",
       "price": 16.0,
@@ -4113,7 +4115,7 @@ window.XIHU_DATA = {
     {
       "code": "E110-01",
       "name": "酸蚀剂2型",
-      "category": "牙釉质粘合树脂-非调拌型",
+      "category": "非调拌型",
       "unit": "支",
       "spec": "5ml/支",
       "price": 24.0,
@@ -4123,7 +4125,7 @@ window.XIHU_DATA = {
     {
       "code": "E610-01",
       "name": "蓝胶Ⅰ型套装",
-      "category": "牙釉质粘合树脂-蓝胶系列",
+      "category": "光固化型-(蓝胶)",
       "unit": "盒",
       "spec": "蓝胶Ⅰ型糊剂5g×1+酸蚀剂2.5mlx2",
       "price": 158.0,
@@ -4133,7 +4135,7 @@ window.XIHU_DATA = {
     {
       "code": "E610-02",
       "name": "蓝胶Ⅰ型套装(加量)",
-      "category": "牙釉质粘合树脂-蓝胶系列",
+      "category": "光固化型-(蓝胶)",
       "unit": "盒",
       "spec": "蓝胶Ⅰ型糊剂5g×2+酸蚀剂2.5mlx3",
       "price": 298.0,
@@ -4143,7 +4145,7 @@ window.XIHU_DATA = {
     {
       "code": "E620-01",
       "name": "蓝胶Ⅱ型套装",
-      "category": "牙釉质粘合树脂-蓝胶系列",
+      "category": "光固化型-(蓝胶)",
       "unit": "盒",
       "spec": "蓝胶Ⅱ型糊剂5g×1+酸蚀剂2.5ml",
       "price": 198.0,
@@ -4153,7 +4155,7 @@ window.XIHU_DATA = {
     {
       "code": "E610-11",
       "name": "蓝胶Ⅰ型-光固化型糊剂",
-      "category": "牙釉质粘合树脂-蓝胶系列",
+      "category": "光固化型-(蓝胶)",
       "unit": "支",
       "spec": "5g/支",
       "price": 140.0,
@@ -4163,7 +4165,7 @@ window.XIHU_DATA = {
     {
       "code": "E620-11",
       "name": "蓝胶Ⅱ型-光固化型糊剂",
-      "category": "牙釉质粘合树脂-蓝胶系列",
+      "category": "光固化型-(蓝胶)",
       "unit": "支",
       "spec": "5g/支",
       "price": 180.0,
@@ -4983,7 +4985,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-01",
       "name": "末端切断钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -4993,7 +4995,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-02",
       "name": "细丝切断钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5003,7 +5005,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-03",
       "name": "粗丝切断钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5013,7 +5015,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-04",
       "name": "细丝成形钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5023,7 +5025,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-05",
       "name": "细丝成形刻断钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5033,7 +5035,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-06",
       "name": "小日月钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5043,7 +5045,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-07",
       "name": "转矩成形钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5053,7 +5055,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-08",
       "name": "带环去除钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5063,7 +5065,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-09",
       "name": "梯形钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5073,7 +5075,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-10",
       "name": "托槽去除钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5083,7 +5085,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-11",
       "name": "霍氏钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5093,7 +5095,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-12",
       "name": "后牙托槽去除钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5103,7 +5105,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-13",
       "name": "KIM钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5113,7 +5115,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-14",
       "name": "垂直曲弯制钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5123,7 +5125,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-15",
       "name": "粘接剂去除钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5133,7 +5135,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-16",
       "name": "分牙圈放置钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5143,7 +5145,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-17",
       "name": "游离钩夹紧钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5153,7 +5155,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-18",
       "name": "末端回弯钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5163,7 +5165,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-19",
       "name": "多功能钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5173,7 +5175,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-20",
       "name": "三喙钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5183,7 +5185,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-21",
       "name": "梯形半月钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5193,7 +5195,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-22",
       "name": "颊面管去盖钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 640,
@@ -5203,7 +5205,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-23",
       "name": "末端切平钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 600,
@@ -5213,7 +5215,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-24",
       "name": "镍钛回弯钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5223,7 +5225,7 @@ window.XIHU_DATA = {
     {
       "code": "J610-25",
       "name": "V形钳（非凡）",
-      "category": "正畸钳",
+      "category": "正畸钳(非凡)",
       "unit": "把",
       "spec": "1×1",
       "price": 580,
@@ -5233,7 +5235,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-01",
       "name": "末端切断钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5243,7 +5245,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-02",
       "name": "细丝切断钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5253,7 +5255,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-03",
       "name": "粗丝切断钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5263,7 +5265,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-04",
       "name": "细丝成形钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5273,7 +5275,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-05",
       "name": "细丝成形刻断钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5283,7 +5285,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-06",
       "name": "小日月钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5293,7 +5295,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-07",
       "name": "转矩成形钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5303,7 +5305,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-08",
       "name": "带环去除钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5313,7 +5315,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-09",
       "name": "梯形钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5323,7 +5325,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-10",
       "name": "托槽去除钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5333,7 +5335,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-11",
       "name": "霍氏钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5343,7 +5345,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-12",
       "name": "后牙托槽去除钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5353,7 +5355,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-13",
       "name": "KIM钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5363,7 +5365,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-14",
       "name": "垂直曲弯制钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5373,7 +5375,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-15",
       "name": "粘接剂去除钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5383,7 +5385,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-16",
       "name": "分牙圈放置钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5393,7 +5395,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-17",
       "name": "游离钩夹紧钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5403,7 +5405,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-18",
       "name": "末端回弯钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5413,7 +5415,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-19",
       "name": "多功能钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5423,7 +5425,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-20",
       "name": "三喙钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5433,7 +5435,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-21",
       "name": "梯形半月钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 490,
@@ -5443,7 +5445,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-22",
       "name": "颊面管去盖钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 520,
@@ -5453,7 +5455,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-23",
       "name": "末端切平钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5463,7 +5465,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-24",
       "name": "镍钛回弯钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
@@ -5473,7 +5475,7 @@ window.XIHU_DATA = {
     {
       "code": "J110-25",
       "name": "V形钳（天工）",
-      "category": "正畸钳",
+      "category": "正畸钳(天工)",
       "unit": "把",
       "spec": "1×1",
       "price": 470,
