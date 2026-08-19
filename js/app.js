@@ -15,43 +15,6 @@
   let searchQuery = '';
   const expandedGroups = new Set(); // 展开的侧边栏分组名（默认全折叠）
 
-  // ── Admin Changes Merge ──
-
-  /** Merge admin localStorage changes into the products array */
-  function mergeAdminChanges() {
-    try {
-      const raw = localStorage.getItem('xihu_admin_changes');
-      if (!raw) return;
-      const changes = JSON.parse(raw);
-      const { added = [], deleted = [], edited = {} } = changes;
-
-      // 1. Remove deleted products (match by code + name)
-      if (deleted.length > 0) {
-        products = products.filter(p => {
-          return !deleted.some(d => d.code === p.code && d.name === p.name);
-        });
-      }
-
-      // 2. Apply edits
-      const editedCodes = Object.keys(edited);
-      if (editedCodes.length > 0) {
-        products = products.map(p => {
-          if (edited[p.code] && edited[p.code][p.name]) {
-            return { ...p, ...edited[p.code][p.name] };
-          }
-          return p;
-        });
-      }
-
-      // 3. Append added products
-      if (added.length > 0) {
-        products = products.concat(added);
-      }
-    } catch (e) {
-      console.warn('Failed to merge admin changes:', e);
-    }
-  }
-
   // ── DOM refs ──
   const $ = (sel) => document.querySelector(sel);
   const $$ = (sel) => document.querySelectorAll(sel);
@@ -806,7 +769,6 @@
     loadQuote();
     loadFavorites();
     loadExpandedGroups();
-    mergeAdminChanges();
     renderSidebar();
     renderProducts();
     updateQuoteBadge();
