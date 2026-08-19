@@ -102,16 +102,6 @@ body {
   text-align: center;
   font-variant-numeric: tabular-nums;
 }
-.header .badge.alt { background: var(--warning); }
-.header .admin-link {
-  background: rgba(255,255,255,0.12);
-  font-size: 16px;
-  padding: 4px 10px;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-.header .admin-link:hover { background: rgba(255,255,255,0.25); }
-
 /* ── Layout ── */
 .main-layout {
   display: flex;
@@ -600,7 +590,6 @@ body {
   .header .header-actions { gap: 4px; flex-shrink: 0; }
   .header .badge { font-size: 11px; padding: 4px 7px; }
   .header .badge .quote-label { display: none; }
-  .header .badge.alt { display: none; }
 
   /* Sidebar — hidden by default, slides in */
   .sidebar {

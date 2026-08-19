@@ -783,7 +783,6 @@
   // ── Header button handlers ──
   $('.hamburger').addEventListener('click', toggleSidebar);
   $('#sidebarBackdrop').addEventListener('click', toggleSidebar);
-  $('.badge.alt').addEventListener('click', showCompany);
   $('#quoteBadge').addEventListener('click', toggleQuote);
   $('#quoteOverlay').addEventListener('click', toggleQuote);
   $('.quote-close').addEventListener('click', toggleQuote);
