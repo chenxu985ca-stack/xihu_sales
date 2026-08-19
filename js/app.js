@@ -587,17 +587,21 @@
   /** 生成报价单纯文本（复制/分享共用） */
   function quoteText() {
     const total = quoteItems.reduce((sum, i) => sum + i.price * i.qty * quoteDiscount / 10, 0);
-    let text = '杭州西湖生物材料有限公司 — 报价单\n';
-    text += '='.repeat(50) + '\n';
-    text += '编码\t产品名称\t规格\t数量\t单价\t折扣\t小计\n';
-    quoteItems.forEach((item) => {
-      text += `${item.code}\t${item.name}\t${item.spec || item.unit}\t${item.qty}\t${item.price.toFixed(2)}\t${quoteDiscount}折\t${(item.price * item.qty * quoteDiscount / 10).toFixed(2)}\n`;
+    const line = '─'.repeat(30);
+    const blocks = quoteItems.map((item, idx) => {
+      const head = item.spec ? `${idx + 1}. ${item.name}  ${item.spec}` : `${idx + 1}. ${item.name}`;
+      const sub = (item.price * item.qty * quoteDiscount / 10).toFixed(2);
+      const tail = `   ${item.code} · ${item.qty}${item.unit} × ${item.price.toFixed(2)} = ${sub}`;
+      return head + '\n' + tail;
     });
-    text += '='.repeat(50) + '\n';
-    text += `合计：¥${total.toFixed(2)}\n`;
-    text += `日期：${new Date().toLocaleDateString('zh-CN')}\n`;
-    text += '杭州西湖生物材料有限公司 | http://cunxiaziyou.cn/biomaterial/index.html';
-    return text;
+    return [
+      '杭州西湖生物材料有限公司 · 报价单',
+      line,
+      blocks.join('\n\n'),
+      line,
+      `合计：¥${total.toFixed(2)}（整单${quoteDiscount}折）`,
+      `日期：${new Date().toLocaleDateString('zh-CN')}`,
+    ].join('\n');
   }
 
   function copyQuote() {
