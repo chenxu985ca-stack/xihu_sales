@@ -13,6 +13,7 @@
   let favorites = []; // {code, name}[]
   let activeCategory = null;
   let searchQuery = '';
+  const collapsedGroups = new Set(); // 折叠的侧边栏分组名
 
   // ── Admin Changes Merge ──
 
@@ -248,7 +249,19 @@
     const groupedCats = new Set();
 
     for (const [groupName, cats] of Object.entries(SIDEBAR_GROUPS)) {
-      html += `<div class="sidebar-title">${groupName}</div>`;
+      const collapsed = collapsedGroups.has(groupName);
+      // 该分组下的实际分类
+      const visibleCats = cats.filter((c) => products.some((p) => p.category === c));
+      const groupCount = visibleCats.reduce((sum, c) => sum + products.filter((p) => p.category === c).length, 0);
+      if (groupCount === 0) continue;
+
+      html += `<div class="sidebar-group${collapsed ? ' collapsed' : ''}">
+        <div class="sidebar-title" data-group="${escHtml(groupName)}">
+          <span class="group-caret">${collapsed ? '▸' : '▾'}</span>${groupName}
+          <span class="group-count">${groupCount}</span>
+        </div>
+        <div class="sidebar-group-body">
+      `;
       for (const catName of cats) {
         groupedCats.add(catName);
         const count = products.filter((p) => p.category === catName).length;
@@ -258,13 +271,22 @@
           <span class="count">${count}</span>
         </div>`;
       }
+      html += `</div></div>`;
     }
 
     // Catch any ungrouped categories
     const allCats = [...new Set(products.map((p) => p.category))];
     const ungrouped = allCats.filter((c) => !groupedCats.has(c));
     if (ungrouped.length > 0) {
-      html += '<div class="sidebar-title">📦 其他</div>';
+      const collapsed = collapsedGroups.has('__ungrouped__');
+      const groupCount = ungrouped.reduce((sum, c) => sum + products.filter((p) => p.category === c).length, 0);
+      html += `<div class="sidebar-group${collapsed ? ' collapsed' : ''}">
+        <div class="sidebar-title" data-group="__ungrouped__">
+          <span class="group-caret">${collapsed ? '▸' : '▾'}</span>📦 其他
+          <span class="group-count">${groupCount}</span>
+        </div>
+        <div class="sidebar-group-body">
+      `;
       for (const catName of ungrouped) {
         const count = products.filter((p) => p.category === catName).length;
         html += `<div class="cat-item${activeCategory === catName ? ' active' : ''}" data-cat="${escHtml(catName)}">
@@ -272,12 +294,32 @@
           <span class="count">${count}</span>
         </div>`;
       }
+      html += `</div></div>`;
     }
 
     // 公司信息入口（移动端顶栏隐藏了该按钮，改放在侧边栏底部）
     html += `<div class="cat-item company-item" data-action="show-company">🏥 公司信息</div>`;
 
     dom.sidebar.innerHTML = html;
+  }
+
+  /** 切换侧边栏分组的折叠/展开 */
+  function toggleGroup(groupName) {
+    if (collapsedGroups.has(groupName)) collapsedGroups.delete(groupName);
+    else collapsedGroups.add(groupName);
+    saveCollapsedGroups();
+    renderSidebar();
+  }
+
+  function saveCollapsedGroups() {
+    localStorage.setItem('xihu_collapsed_groups', JSON.stringify([...collapsedGroups]));
+  }
+
+  function loadCollapsedGroups() {
+    try {
+      const saved = localStorage.getItem('xihu_collapsed_groups');
+      if (saved) JSON.parse(saved).forEach((g) => collapsedGroups.add(g));
+    } catch (e) { /* ignore */ }
   }
 
   function selectCategory(cat) {
@@ -680,6 +722,11 @@
       showCompany();
       return;
     }
+    const groupTitle = e.target.closest('.sidebar-title');
+    if (groupTitle) {
+      toggleGroup(groupTitle.dataset.group);
+      return;
+    }
     const item = e.target.closest('.cat-item');
     if (!item) return;
     const cat = item.dataset.cat || '';
@@ -759,6 +806,7 @@
   function init() {
     loadQuote();
     loadFavorites();
+    loadCollapsedGroups();
     mergeAdminChanges();
     renderSidebar();
     renderProducts();
