@@ -73,12 +73,12 @@ def build_data():
                       "副", f"{hook} 20×1", 1200, "卓越系列Ⅵ代", "🌟 明星产品"))
 
     for torque, prefix in [("标准转矩", "A0512-32"), ("高转矩", "A0522-32"), ("低转矩", "A0532-32")]:
-        products.append(p(prefix, f"卓越系列Ⅴ代（{torque}）", "卓越系列",
-                  "副", f"{torque} 20×1", 1200, "卓越系列Ⅴ代", "🌟 明星产品"))
+        products.append(p(prefix, "卓越Ⅴ代自锁托槽", "卓越系列",
+                  "副", f"{torque} 20×1", 1200, "卓越Ⅴ代自锁托槽", "🌟 明星产品"))
 
     for torque, prefix in [("标准转矩", "A0412-31"), ("高转矩", "A0422-31"), ("低转矩", "A0432-31")]:
-        products.append(p(prefix, f"卓越系列Ⅳ代（{torque}）", "卓越系列",
-                  "副", f"{torque} 20×1", 1000, "卓越系列Ⅳ代"))
+        products.append(p(prefix, "卓越Ⅳ代自锁托槽", "卓越系列",
+                  "副", f"{torque} 20×1", 1000, "卓越Ⅳ代自锁托槽"))
 
     # 卓越系列Ⅳ代2.0 — 三个转矩，每个3个钩型 + MBT
     for torque, prefix in [("标准转矩", "A0612"), ("高转矩", "A0622"), ("低转矩", "A0632")]:
